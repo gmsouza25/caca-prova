@@ -1,0 +1,140 @@
+# ============================================================
+#  semana-ia.yml — Ciclo semanal do CAÇA PROVAS
+#  Sequência (fuso America/Recife, UTC-3):
+#    Sáb madrugada  → raspagem + enriquecimento Lote 1 (LLM)
+#    Dom madrugada  → enriquecimento Lote 2 (LLM)
+#    Seg madrugada  → enriquecimento Lote 3 (LLM)
+#    Seg 08h        → notificações aos usuários (worker de push, cron próprio)
+#  Obs.: o agendado do GitHub usa UTC; 06:00 UTC = 03:00 BRT (madrugada).
+#  A cota gratuita do Gemini (~20 req/dia) comporta 1 lote por dia.
+#
+#  ROBUSTEZ: cada job calcula em tempo de execução os PRÓXIMOS ids pendentes
+#  (que ainda não têm `fonteDados`) via `scripts/lote-ids.mjs`, e envia por
+#  `LLM_IDS`. Assim o lote avança sozinho dia a dia, sem depender de offsets
+#  fixos (não desalinha se o acervo mudar ou um edital ficar 100% preenchido).
+#
+#  REQUER segredo no GitHub:  LLM_API_KEY  (chave Gemini — não expor no código).
+#  REQUER permissão de escrita (Settings → Actions → General → Workflow permissions
+#  → "Read and write"), senão o passo de commit/push falha.
+# ============================================================
+name: "Ciclo semanal (raspagem + lotes IA)"
+
+on:
+  schedule:
+    - cron: "0 6 * * 6"    # Sáb 06:00 UTC = 03:00 BRT  → raspagem + Lote 1
+    - cron: "0 6 * * 0"    # Dom 06:00 UTC = 03:00 BRT  → Lote 2
+    - cron: "0 6 * * 1"    # Seg 06:00 UTC = 03:00 BRT  → Lote 3
+  workflow_dispatch:
+    inputs:
+      lote:
+        description: "Rodar só um lote (1/2/3)"
+        default: "1"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  # ---- Sábado: raspar + Lote 1 ----
+  sabado:
+    if: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 6 * * 6') || (github.event_name == 'workflow_dispatch' && github.event.inputs.lote == '1') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20", cache: npm }
+      - name: Instalar dependencias da raiz (pdf-parse)
+        run: npm ci
+      - name: Instalar dependencias do crawler (cheerio)
+        working-directory: crawler
+        run: npm ci
+      - name: Raspagem (Sabado)
+        run: node crawler/index.js
+      - name: Enriquecimento PCI (safety net)
+        run: |
+          node crawler/index.js --enrich-only || echo "aviso PCI indisponivel"
+      - name: Descobrir ids pendentes (Lote 1)
+        id: lote
+        run: |
+          echo "ids=$(node scripts/lote-ids.mjs 18)" >> "$GITHUB_OUTPUT"
+      - name: Lote 1 (IA) - dry + apply
+        if: ${{ steps.lote.outputs.ids != '' }}
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_ESTIMATE: "1"
+          LLM_IDS: ${{ steps.lote.outputs.ids }}
+        run: |
+          node scripts/llm-enrich.mjs --dry
+          node scripts/llm-enrich.mjs --apply || echo "aviso LLM sem chave ou cota - acervo atual mantido"
+      - name: Commit do acervo atualizado
+        run: |
+          git config --global user.name "caca-prova[bot]"
+          git config --global user.email "bot@cacaprova.com.br"
+          git add -A concursos.json crawler/out crawler/db
+          git diff --cached --quiet && exit 0 || true
+          git commit -m "[bot] Sabado raspagem + Lote 1 ($(date -u +%Y-%m-%d))"
+          git push
+
+  # ---- Domingo: Lote 2 ----
+  domingo:
+    if: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 6 * * 0') || (github.event_name == 'workflow_dispatch' && github.event.inputs.lote == '2') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20", cache: npm }
+      - name: Instalar dependencias da raiz (pdf-parse)
+        run: npm ci
+      - name: Descobrir ids pendentes (Lote 2)
+        id: lote
+        run: |
+          echo "ids=$(node scripts/lote-ids.mjs 18)" >> "$GITHUB_OUTPUT"
+      - name: Lote 2 (IA) - dry + apply
+        if: ${{ steps.lote.outputs.ids != '' }}
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_ESTIMATE: "1"
+          LLM_IDS: ${{ steps.lote.outputs.ids }}
+        run: |
+          node scripts/llm-enrich.mjs --dry
+          node scripts/llm-enrich.mjs --apply || echo "aviso LLM sem chave ou cota - acervo atual mantido"
+      - name: Commit do acervo atualizado
+        run: |
+          git config --global user.name "caca-prova[bot]"
+          git config --global user.email "bot@cacaprova.com.br"
+          git add -A concursos.json
+          git diff --cached --quiet && exit 0 || true
+          git commit -m "[bot] Domingo Lote 2 ($(date -u +%Y-%m-%d))"
+          git push
+
+  # ---- Segunda: Lote 3 ----
+  segunda:
+    if: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 6 * * 1') || (github.event_name == 'workflow_dispatch' && github.event.inputs.lote == '3') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20", cache: npm }
+      - name: Instalar dependencias da raiz (pdf-parse)
+        run: npm ci
+      - name: Descobrir ids pendentes (Lote 3)
+        id: lote
+        run: |
+          echo "ids=$(node scripts/lote-ids.mjs 19)" >> "$GITHUB_OUTPUT"
+      - name: Lote 3 (IA) - dry + apply
+        if: ${{ steps.lote.outputs.ids != '' }}
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_ESTIMATE: "1"
+          LLM_IDS: ${{ steps.lote.outputs.ids }}
+        run: |
+          node scripts/llm-enrich.mjs --dry
+          node scripts/llm-enrich.mjs --apply || echo "aviso LLM sem chave ou cota - acervo atual mantido"
+      - name: Commit do acervo atualizado
+        run: |
+          git config --global user.name "caca-prova[bot]"
+          git config --global user.email "bot@cacaprova.com.br"
+          git add -A concursos.json
+          git diff --cached --quiet && exit 0 || true
+          git commit -m "[bot] Segunda Lote 3 ($(date -u +%Y-%m-%d))"
+          git push
