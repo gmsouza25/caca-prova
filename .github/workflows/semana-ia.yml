@@ -70,7 +70,8 @@ jobs:
         run: |
           git config --global user.name "caca-prova[bot]"
           git config --global user.email "bot@cacaprova.com.br"
-          git add -A concursos.json crawler/out crawler/db
+          # crawler/out e crawler/db sao artefatos gitignored; so o concursos.json vai pro repo
+          git add -A concursos.json
           git diff --cached --quiet && exit 0 || true
           git commit -m "[bot] Sabado raspagem + Lote 1 ($(date -u +%Y-%m-%d))"
           git push

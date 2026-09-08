@@ -8,19 +8,21 @@
 //  Distribuir os 55 editais por vários modelos permite processar TUDO
 //  no mesmo dia, em vez de esperar a cota de UM modelo renovar.
 //
-//  Como funciona:
-//    1. Lê concursos.json e descobre os ids que precisam de enriquecimento.
-//    2. Percorre a lista de modelos (rotação). Para cada modelo, processa um
-//       lote de ids (LLM_IDS) chamando scripts/llm-enrich.mjs (--dry + --apply).
-//    3. Após cada modelo, recomputa o que ainda falta; o excedente vai para o
-//       próximo modelo. Quando um modelo esgota a cota (muitos erros), segue
-//       para o seguinte.
-//    4. Para: todos processados OU nenhum modelo com cota restante.
+//  Melhorias (v2):
+//    • Timestamps + progresso por modelo.
+//    • Não derruba o script se um modelo falhar/estourar cota — pula para o próximo.
+//    • Detecta cota esgotada (429/"quota") e não insiste no modelo.
+//    • Modo --check: só sonda os modelos (gasta 1 req cada) e mostra o que está livre,
+//      sem processar nada.
+//    • Modo --ids: imprime os ids exatos que seriam processados agora (útil p/ revisão),
+//      sem chamar a API.
 //
 //  Uso:
-//    LLM_ESTIMATE=1 node scripts/rodar-multimodelo.mjs            # processa tudo
+//    LLM_ESTIMATE=1 node scripts/rodar-multimodelo.mjs                 # processa tudo
 //    LLM_ESTIMATE=1 LLM_MODELS="gemini-3.5-flash,gemini-3.6-flash" node scripts/rodar-multimodelo.mjs
-//    ... LLM_PER_MODEL=10 node scripts/rodar-multimodelo.mjs       # máx. por modelo
+//    ... LLM_PER_MODEL=10 node scripts/rodar-multimodelo.mjs           # máx. por modelo
+//    node scripts/rodar-multimodelo.mjs --check                        # sonda modelos
+//    node scripts/rodar-multimodelo.mjs --ids                          # só imprime ids pendentes
 // ============================================================
 import { readFileSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -37,6 +39,10 @@ const DELAY = Number(process.env.LLM_DELAY || 3600);
 const KEY = process.env.LLM_API_KEY;
 if (!KEY) { console.error("⛔ Faltou LLM_API_KEY (exporte ou .env.llm)."); process.exit(1); }
 
+const MODE_CHECK = process.argv.includes("--check");
+const MODE_IDS = process.argv.includes("--ids");
+const MODE_DRY_ONLY = process.argv.includes("--dry-only"); // gera concursos.llm.json mas NÃO aplica
+
 const models = (process.env.LLM_MODELS || "gemini-3.6-flash,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-3.1-flash-lite-preview,gemini-3.7-flash,gemini-3-flash-preview")
   .split(",").map((s) => s.trim()).filter(Boolean);
 const PER_MODEL = Number(process.env.LLM_PER_MODEL || 12); // ≈ dentro do teto ~20/dia
@@ -50,50 +56,96 @@ const needIds = () => {
 };
 const summary = (file) => {
   if (!existsSync(file)) return null;
-  const j = JSON.parse(readFileSync(file, "utf8"));
-  return j.llm || null;
+  try { const j = JSON.parse(readFileSync(file, "utf8")); return j.llm || null; } catch { return null; }
 };
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const ts = () => new Date().toISOString().slice(11, 19);
+
 function run(mode, env) {
-  execFileSync("node", ["scripts/llm-enrich.mjs", mode], {
-    cwd: ROOT, stdio: "inherit", env: { ...process.env, ...env },
-  });
+  // execFileSync lança se o subprocesso sair != 0. Capturamos para não derrubar o script.
+  try {
+    execFileSync("node", ["scripts/llm-enrich.mjs", mode], {
+      cwd: ROOT, stdio: "inherit", env: { ...process.env, ...env },
+    });
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, msg: String(e.status ?? e.message).slice(0, 120) };
+  }
 }
 
+// ---- --ids: só imprime o que seria processado ----
+if (MODE_IDS) {
+  const pending = needIds().slice(0, Number(process.env.LLM_LIMIT || Infinity));
+  process.stdout.write(pending.join(","));
+  console.error(`\nℹ️  [--ids] ${pending.length} pendente(s).`);
+  process.exit(0);
+}
+
+// ---- --check: sonda os modelos (1 req cada) e mostra o que está livre ----
+if (MODE_CHECK) {
+  let pending = needIds().length;
+  console.log(`🔎 [--check] ${pending} edital(is) pendente(s) | modelos: ${models.length}\n`);
+  for (const m of models) {
+    try {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${encodeURIComponent(KEY)}`;
+      const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: "ok" }] }], generationConfig: { temperature: 0 } }) });
+      let extra = "";
+      try { const j = await r.json(); if (j.error) extra = (j.error.message || "").slice(0, 46); } catch { extra = ""; }
+      const ok = r.status === 200;
+      console.log(`   ${ok ? "✅" : "❌"} ${m.padEnd(32)} HTTP ${r.status}${extra ? " · " + extra : ""}`);
+    } catch (e) {
+      console.log(`   ❌ ${m.padEnd(32)} erro de rede: ${e.message}`);
+    }
+    await sleep(400); // espaça p/ não estourar o RPM na sonda
+  }
+  process.exit(0);
+}
+
+// ---- fluxo principal ----
 (async () => {
   let pending = needIds();
-  console.log(`📚 ${pending.length} edital(is) a processar | ${models.length} modelo(s) na rotação | máx ${PER_MODEL}/modelo\n`);
+  console.log(`[${ts()}] 📚 ${pending.length} edital(is) a processar | ${models.length} modelo(s) | máx ${PER_MODEL}/modelo | ${MODE_DRY_ONLY ? "DRY-ONLY (não aplica)" : "aplica"}\n`);
+
+  let appliedFor = []; // ids efetivamente marcados (fonteDados) após aplicar
 
   for (const model of models) {
     if (!pending.length) break;
     const chunk = pending.slice(0, PER_MODEL);
-    console.log(`\n=== ▶ MODELO ${model} (lote ${chunk.length}) ===`);
+    console.log(`[${ts()}] === ▶ MODELO ${model} (lote ${chunk.length}) ===`);
 
-    let errsInChunk = 0, lidosInChunk = 0;
-    // dry + apply por modelo (com um pouco de espaçamento p/ não estourar RPM)
-    run("--dry", { LLM_MODEL: model, LLM_IDS: chunk.join(","), LLM_ESTIMATE: process.env.LLM_ESTIMATE || "1" });
+    // dry (gera concursos.llm.json p/ revisar). Se falhar, tenta outro modelo.
+    const d = run("--dry", { LLM_MODEL: model, LLM_IDS: chunk.join(","), LLM_ESTIMATE: process.env.LLM_ESTIMATE || "1" });
     const meta = summary(join(ROOT, "concursos.llm.json"));
-    errsInChunk = meta ? meta.nErros : 0;
-    lidosInChunk = meta ? (meta.lidosDeEdital || 0) : 0;
-    run("--apply", { LLM_MODEL: model, LLM_IDS: chunk.join(","), LLM_ESTIMATE: process.env.LLM_ESTIMATE || "1" });
+    const lidos = meta ? (meta.lidosDeEdital || 0) : 0;
+    const errs = meta ? (meta.nErros || 0) : 0;
+    const estimados = meta ? (meta.estimados || 0) : 0;
 
-    // se o modelo não rendeu (ex.: cota esgotada → tudo erro), não insiste nele
-    if (chunk.length > 0 && lidosInChunk === 0 && errsInChunk >= chunk.length) {
-      console.log(`   ⚠️ ${model} rendeu 0 leituras (${errsInChunk} erro(s)) — pulando para o próximo modelo.`);
-    } else {
-      console.log(`   ✔ ${model}: ${lidosInChunk} lidos do edital, ${errsInChunk} erro(s).`);
+    // Se o modelo não rendeu (0 leitura e muito erro), provavelmente cota esgotada → pula.
+    const exhausted = chunk.length > 0 && lidos === 0 && errs >= chunk.length;
+    if (exhausted) {
+      console.log(`   ⚠️ ${model} rendeu 0 leituras (${errs} erro(s)) — cota esgotada/instável, pulando.`);
+      await sleep(DELAY);
+      continue;
     }
+
+    if (!MODE_DRY_ONLY) {
+      const ap = run("--apply", { LLM_MODEL: model, LLM_IDS: chunk.join(","), LLM_ESTIMATE: process.env.LLM_ESTIMATE || "1" });
+      if (!ap.ok) console.log(`   ⚠️ apply não retornou com sucesso (${ap.msg}) — continua mesmo assim.`);
+    } else {
+      console.log(`   [--dry-only] não aplicou (conferir concursos.llm.json).`);
+    }
+
+    console.log(`   ✔ ${model}: ${lidos} lidos do edital, ${estimados} estimados, ${errs} erro(s).`);
 
     await sleep(DELAY);
     const after = new Set(needIds());
     pending = pending.filter((id) => after.has(id));
-    console.log(`   → resta(m) ${pending.length} edital(is) sem dados confirmados.`);
+    console.log(`[${ts()}]   → resta(m) ${pending.length} edital(is) sem dados confirmados.`);
   }
 
   const finalSummary = summary(PATH);
-  console.log(`\n========== RESUMO FINAL ==========`);
-  console.log(`Modelos usados: ${models.length}`);
+  console.log(`\n[${ts()}] ========== RESUMO FINAL ==========`);
   console.log(`Fonte atual (concursos.json): ${finalSummary ? JSON.stringify({ model: finalSummary.model, lidos: finalSummary.lidosDeEdital, estimados: finalSummary.estimados, erros: finalSummary.nErros }) : "?"}`);
   console.log(`Ainda pendentes: ${pending.length} ${pending.length ? "(→ " + pending.join(", ") + ")" : ""}`);
   console.log(`\n${pending.length === 0 ? "🎉 TODOS os editais processados." : "⏳ Falta processar (cota diária esgotou ou fonte bloqueada)."}`);

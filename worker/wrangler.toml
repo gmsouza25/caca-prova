@@ -11,10 +11,10 @@
 
 name = "caca-prova-push"
 main = "webpush.js"
-compatibility_date = "2024-01-01"
+compatibility_date = "2024-09-23"
 
 # Necessário para a lib web-push (crypto/streams).
-nodejs_compat = true
+compatibility_flags = ["nodejs_compat"]
 
 # Namespace KV que guarda assinaturas de push e eventos agendados.
 # IMPORTANTE: use o MESMO namespace que você vincula ao projeto Pages (Settings →

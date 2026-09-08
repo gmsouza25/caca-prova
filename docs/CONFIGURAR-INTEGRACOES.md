@@ -80,8 +80,8 @@ npx wrangler login
 npx wrangler secret put VAPID_PRIVATE_KEY
 #   cole a private key
 ```
-- No `worker/wrangler.toml`, já estão as `[vars]` `VAPID_SUBJECT` e as `[triggers]`. **Edite** o
-  valor do KV:
+- No `worker/wrangler.toml`, já estão as `[vars]` `VAPID_SUBJECT`, as `[triggers]` e a flag
+  `compatibility_flags = ["nodejs_compat"]`. **Edite** o valor do KV:
   ```toml
   [[kv_namespaces]]
   binding = "PUSH"
@@ -91,6 +91,11 @@ npx wrangler secret put VAPID_PRIVATE_KEY
   ```bash
   npx wrangler deploy
   ```
+
+> ⚠️ **Não use `nodejs_compat = true` nem `--node-compat` na config** (a menos que via flag CLI
+> `--node-compat`). O correto neste Wrangler é `compatibility_flags = ["nodejs_compat"]` com
+> `compatibility_date` >= `2024-09-23`. Sem isso, o bundle do worker falha com
+> *"Could not resolve 'url'/'https'"* (o `web-push` usa módulos nativos do Node).
 
 ## B.3 Validação do worker
 - Depois do deploy, rode (você os executa; eu não alcanço o Cloudflare):
@@ -158,6 +163,64 @@ git push origin main                # (ou o branch usado, ex.: main/master)
 2. **GitHub → repositório → Settings → Actions → General → Workflow permissions**:
    - marque **"Read and write permissions"** (o workflow faz commit/push do `concursos.json`).
 3. O secret **`LLM_API_KEY`** (Block A) garante que os jobs de IA não falhem.
+
+---
+
+## 🚀 Deploy + Cache purge (quando publicar o app)
+
+O **app** (frontend + Pages Functions) mora no **Cloudflare Pages**. Depois de subir as mudanças no
+GitHub, publique o `dist/` e **purgue o cache do domínio** `cacaprova.com.br` (senão o Cloudflare
+continua servindo a versão antiga em cache de borda por até 1 dia).
+
+### D1 — Publicar no Cloudflare Pages (no seu terminal)
+```bash
+cd <projeto>/caca-prova
+npm i --no-save wrangler@3.112.0        # Node 20 aceita a v3; re-instalar se node_modules sumiu
+
+# injeta os segredos no config.js e monta o dist/ (só o que vai pro ar)
+node scripts/build-config.mjs
+node scripts/build-pages.mjs
+
+# publica na PRODUÇÃO (branch main)
+CLOUDFLARE_ACCOUNT_ID=294d134330d5b019e048675a56cc8b84 \
+CLOUDFLARE_API_TOKEN=<seu_token> \
+./node_modules/.bin/wrangler pages deploy dist --project-name="caca-prova" --branch main --commit-dirty=true
+```
+> Ou use o script pronto: `CLOUDFLARE_ACCOUNT_ID=... CLOUDFLARE_API_TOKEN=... ./deploy-pages.sh`.
+> O `dist/` NÃO persiste entre sessões — rode `build-config` + `build-pages` antes de cada deploy.
+
+### D2 — Purgar cache do domínio `cacaprova.com.br`
+O cache de borda fica na **zona do domínio** (não no projeto Pages). Duas formas:
+
+**Via painel:**
+1. **Cloudflare → selecione a zona `cacaprova.com.br`** (não "Workers & Pages").
+2. Menu lateral → **Caching** → **Configuration**.
+3. Clique em **"Purge Everything"** (ou adicione URL específica em "Custom Purge").
+4. **Confirm**.
+
+**Via API (precisa de um token com permissão `Cache Purge` — o token de Pages NÃO serve):**
+- Crie um **API Token** com permissão **Zone → Cache Purge → Purge**.
+- Com ele:
+```bash
+ZONE_ID=<id-da-zona>                     # aparece na página de visão geral da zona
+CF_TOKEN=<token-com-cache-purge>
+curl -X POST "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/purge_cache" \
+  -H "Authorization: Bearer $CF_TOKEN" \
+  -H "Content-Type: application/json" \
+  --data '{"purge_everything":true}'
+```
+
+> ⚠️ **Por que fazer os dois:** o `wrangler pages deploy` atualiza o projeto Pages, mas o domínio
+> custom `cacaprova.com.br` pode ficar servindo **cache antigo**. Se o site não refletir as mudanças,
+> é o cache de borda — purgue. (Antes isso falhou porque o token `cfut_3KA...` não tinha `Cache Purge`.)
+
+### D3 — Redeploy do worker de push (se mudou o `worker/`)
+O worker é um **projeto separado** (`caca-prova-push`). Publique **depois** de configurar os secrets VAPID:
+```bash
+cd worker
+npm i                                  # instala o web-push
+npx wrangler deploy                    # sobe o worker + crons (Seg 08h e 15-em-15)
+```
 
 ---
 

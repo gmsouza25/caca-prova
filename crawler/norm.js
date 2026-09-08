@@ -163,7 +163,7 @@ function status(c) {
 const onlyPositive = (v) => (v && Number(v) > 0 ? Number(v) : null);
 
 // ---- constrói o registro final ----
-function buildRecord({ fonte, fonteCode, id, orgao, cargo, cidade, estado, esfera: esf, salario: sal, vagas: vag, dt_publicacao, dt_inscricao_abre, dt_inscricao_fecha, dt_prova, regime: reg, link, statusRaw, titulo }) {
+function buildRecord({ fonte, fonteCode, id, orgao, cargo, cidade, estado, esfera: esf, salario: sal, vagas: vag, dt_publicacao, dt_inscricao_abre, dt_inscricao_fecha, dt_prova, regime: reg, link, edital, statusRaw, titulo }) {
   const geo = geoFor(`${cidade || ""} ${estado || ""} ${orgao || ""} ${titulo || ""}`);
   const c = {
     id,
@@ -184,6 +184,7 @@ function buildRecord({ fonte, fonteCode, id, orgao, cargo, cidade, estado, esfer
     dt_prova: dt_prova || null,
     regime: reg || regime(cargo || "", orgao),
     link: link || "",
+    edital: edital || "", // URL direto do PDF do edital (se a fonte conseguir resolver)
     fonte,
     statusRaw: statusRaw || "",
   };
