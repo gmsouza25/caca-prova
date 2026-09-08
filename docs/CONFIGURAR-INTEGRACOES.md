@@ -116,18 +116,31 @@ Copie do projeto do sandbox para o seu clone local os que **ainda não estiverem
 
 | Caminho | Por quê |
 |---|---|
-| `.github/workflows/semana-ia.yml` | **NOVO** — raspagem Sáb + Lote 1/2/3 (Dom/Seg) |
+| `.github/workflows/semana-ia.yml` | **NOVO** — raspagem Sáb + Lote 1/2/3 (Dom/Seg) via `LLM_IDS` |
 | `.github/workflows/scrape.yml` | editado — agora só checagem diária |
 | `crawler/config.js` | editado — `cronUtc = "0 6 * * 6"` (raspagem no sábado) |
 | `worker/webpush.js` | editado — broadcast Seg 08h + rotas |
 | `worker/wrangler.toml` | editado — KV id real + crons `0 11 * * 1` |
 | `package-lock.json`, `crawler/package-lock.json` | para o `npm ci` no GitHub Actions |
+| `scripts/lote-ids.mjs` | **NOVO — essencial** — calcula em runtime os próximos ids pendentes |
 
 > **Obrigatório** para o worker funcionar: dentro do `worker/wrangler.toml` do clone, o **id do KV**
 > tem que ser `3889998d201b4b458ab2aaaa888f4e39` (não `SEU_ID_DO_KV_AQUI`).
 
-> Opcional: `scripts/` (limpar-dados.mjs, rodar-multimodelo.mjs, llm-enrich.mjs) e `docs/` — úteis,
-> mas não são necessários para o workflow em produção.
+> Opcional: outros de `scripts/` (limpar-dados.mjs, rodar-multimodelo.mjs) e `docs/` — úteis, mas
+> não são necessários para o workflow em produção. **`scripts/lote-ids.mjs` é obrigatório** (o workflow
+> usa para escolher o que processar).
+
+### Como o workflow escolhe o que processar (robusto)
+Cada job roda `node scripts/lote-ids.mjs <N>` e manda o resultado para `LLM_IDS`. Esse script lista os
+ids que **ainda não têm `fonteDados`** (nunca passaram pelo LLM) e pega os primeiros `N`. Depois de
+processado, cada edital ganha `fonteDados` e sai da lista — então:
+- **Sábado** pega os 18 primeiros pendentes → Lote 1;
+- **Domingo** pega os próximos 18 → Lote 2;
+- **Segunda** pega os próximos 19 → Lote 3.
+
+Isso **não depende de offsets fixos**, então não desalinha se o acervo mudar (crawl) ou um edital ficar
+100% preenchido. Se não houver pendentes em algum dia, a etapa de IA é pulada e o job só commita (sem mudança).
 
 ## C.2 Commitar e enviar (no seu terminal, dentro do clone)
 ```bash
