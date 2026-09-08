@@ -113,6 +113,7 @@ CREATE INDEX IF NOT EXISTS idx_concursos_status ON concursos(status);
 CREATE INDEX IF NOT EXISTS idx_concursos_area ON concursos(area);
 CREATE INDEX IF NOT EXISTS idx_concursos_uf ON concursos(estado);
 `;
+  fs.mkdirSync(path.join(__dirname, "db"), { recursive: true }); // cria a pasta se não existir (ex.: CI/clone limpo)
   fs.mkdirSync(path.join(__dirname, "out"), { recursive: true });
   fs.writeFileSync(path.join(__dirname, "db", "schema.sql"), schema);
   return schema;

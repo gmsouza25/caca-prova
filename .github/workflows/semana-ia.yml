@@ -42,7 +42,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: "20", cache: npm }
+        with: { node-version: "22", cache: npm }
       - name: Instalar dependencias da raiz (pdf-parse)
         run: npm ci
       - name: Instalar dependencias do crawler (cheerio)
@@ -82,7 +82,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: "20", cache: npm }
+        with: { node-version: "22", cache: npm }
       - name: Instalar dependencias da raiz (pdf-parse)
         run: npm ci
       - name: Descobrir ids pendentes (Lote 2)
@@ -114,7 +114,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: "20", cache: npm }
+        with: { node-version: "22", cache: npm }
       - name: Instalar dependencias da raiz (pdf-parse)
         run: npm ci
       - name: Descobrir ids pendentes (Lote 3)
