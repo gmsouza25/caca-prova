@@ -1,0 +1,29 @@
+# ============================================================
+#  wrangler.toml — Cloudflare PAGES (o site + Pages Functions)
+#  Configuração do deploy do app CAÇA PROVAS no Cloudflare Pages.
+#  As Pages Functions (/api/...) são detectadas na pasta `functions/`.
+#  Os bindings KV abaixo são aplicados pelo `wrangler pages deploy`.
+#
+#  Deploy (uma vez):
+#    npm i -g wrangler
+#    wrangler login
+#    npx wrangler pages project create caca-prova --production-branch main
+#    npx wrangler pages deploy . --project-name="caca-prova" --branch main
+# ============================================================
+
+name = "caca-prova"
+pages_build_output_dir = "."
+compatibility_date = "2024-01-01"
+
+# Bindings KV usados pelas Pages Functions (/api/...).
+[[kv_namespaces]]
+binding = "PUSH"
+id = "3889998d201b4b458ab2aaaa888f4e39"
+
+[[kv_namespaces]]
+binding = "PIX"
+id = "3605a8d3d2a54172ace4b0fe45b54ca6"
+
+[[kv_namespaces]]
+binding = "SUPPORT"
+id = "7b43b6dd39204999aa76cc6a9f8b358b"

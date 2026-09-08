@@ -1,0 +1,40 @@
+# ============================================================
+#  .pagesignore — (NOTA)
+#  Este arquivo NÃO é respeitado pelo `wrangler pages deploy .`
+#  em upload direto — o Wrangler sobe a pasta raiz INTEIRA
+#  (o site chegou a servir `/.env` publicamente).
+#  O mecanismo REAL de exclusão é o `scripts/build-pages.mjs`,
+#  que gera o `dist/` só com o app e publicamos o `dist/`.
+#  Mantido aqui para referência / builds por Git. Não remover sem ler.
+# ============================================================
+
+# ------ segredos / credenciais (CRÍTICO) ------
+.env
+.env.*
+.wrangler/
+*.pem
+*.key
+
+# ------ dependências / ferramentas de dev ------
+node_modules/
+.github/
+scripts/
+crawler/
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# ------ scripts e servidor local (dev) ------
+deploy-pages.sh
+serve.py
+exemplo/
+
+# ------ documentação (não é app) ------
+README.md
+RETOMADA.md
+ESTADO.md
+PUBLICAR.md
+INSTALACAO.md
+ESPECIFICACAO.md
+TERMOS.md

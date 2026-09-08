@@ -1,0 +1,38 @@
+# worker/wrangler.toml — configuração do Worker de push (Cloudflare, grátis).
+# Deploy:
+#   1) npx web-push generate-vapid-keys
+#   2) wrangler kv namespace create PUSH   -> copie o id abaixo
+#   3) wrangler secret put VAPID_PUBLIC_KEY
+#      wrangler secret put VAPID_PRIVATE_KEY
+#   4) wrangler deploy
+#
+# O app usa este endpoint como PUSH.endpoint (config.js) e, com o Cron abaixo,
+# envia as notificações background das etapas dos concursos salvos.
+
+name = "caca-prova-push"
+main = "webpush.js"
+compatibility_date = "2024-01-01"
+
+# Necessário para a lib web-push (crypto/streams).
+nodejs_compat = true
+
+# Namespace KV que guarda assinaturas de push e eventos agendados.
+# IMPORTANTE: use o MESMO namespace que você vincula ao projeto Pages (Settings →
+# Bindings → KV). Assim as assinaturas gravadas pelo `/api/subscribe` das Pages
+# Functions aparecem para o cron deste Worker, que é quem ENVIA a notificação.
+# Se for usar apenas o Worker como backend único (PUSH.endpoint no app), um
+# namespace próprio aqui já basta.
+# Substitua o id pelo retornado em: wrangler kv namespace create PUSH
+[[kv_namespaces]]
+binding = "PUSH"
+id = "SEU_ID_DO_KV_AQUI"
+
+[vars]
+# Assunto obrigatório do VAPID (contato público). O par de chaves fica em segredos.
+VAPID_SUBJECT = "mailto:suporte@cacaprova.com.br"
+
+# Só o Cron envia os pushs agendados (não gasta request à toa).
+#  */15 * * * *  → envia os eventos de etapas que venceram (15 em 15 min).
+#  0 11 * * 1    → Seg 08h BRT: broadcast semanal "novos concursos" a todos os inscritos.
+[triggers]
+crons = ["*/15 * * * *", "0 11 * * 1"]

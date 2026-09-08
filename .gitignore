@@ -1,0 +1,21 @@
+# dependências
+node_modules/
+
+# saída de auditoria do crawler (regenerada a cada run; não vai pro repo)
+crawler/out/
+crawler/db/
+
+# artefatos temporários
+*.log
+.DS_Store
+*.tmp
+
+# segredos (nunca commitar)
+.env
+.wrangler/
+
+# Chave da API Gemini (enriquecimento de editais) — NUNCA commitar
+.env.llm
+
+# Credenciais de deploy (Cloudflare) — NUNCA commitar
+.env.deploy

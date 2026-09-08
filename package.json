@@ -1,0 +1,14 @@
+{
+  "name": "caca-prova",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "CAÇA PROVAS — ferramentas de trabalho (crawler/enriquecimento). O app é estático (sem build); este package.json é só para as dependências dos scripts de linha de comando.",
+  "scripts": {
+    "enrich": "node scripts/enrich-concursos.mjs",
+    "llm": "node scripts/llm-enrich.mjs"
+  },
+  "dependencies": {
+    "pdf-parse": "^2.4.5"
+  }
+}

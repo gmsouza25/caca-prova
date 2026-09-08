@@ -1,0 +1,78 @@
+name: Raspagem semanal (editais públicos)
+
+on:
+  # Horário de menor tráfego: 06:00 UTC = 03:00 AM em Recife (America/Recife), quarta-feira.
+  # Confira a documentação de "schedule" — o GitHub usa apenas o fuso UTC.
+  schedule:
+    - cron: "0 6 * * 3"    # raspagem semanal (quarta, 03:00 BRT)
+    - cron: "0 12 * * *"   # checagem diária leve (descarta se a fonte caiu)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-crawl:
+    if: ${{ github.event_name == 'schedule' && github.event.schedule == '0 6 * * 3' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: crawler/package-lock.json
+      - name: Instalar dependências
+        working-directory: crawler
+        run: npm ci
+      - name: Rodar raspagem (semanal)
+        working-directory: crawler
+        run: |
+          node index.js
+      - name: Re-enriquecer com PCI (safety net; não quebra se falhar)
+        working-directory: crawler
+        run: node index.js --enrich-only || echo "aviso: enriquecimento PCI indisponível — célula mantém dados atuais"
+      - name: Guardar artefatos (auditoria)
+        uses: actions/upload-artifact@v4
+        with:
+          name: concursos
+          path: |
+            concursos.json
+            crawler/out/
+            crawler/db/
+      - name: Commit do acervo atualizado
+        run: |
+          git config --global user.name "caca-prova[bot]"
+          git config --global user.email "bot@cacaprova.com.br"
+          git add -A concursos.json crawler/out crawler/db
+          git diff --cached --quiet && exit 0 || true
+          git commit -m "[bot] Atualização semanal do acervo de concursos ($(date -u +%Y-%m-%d))"
+          git push
+
+  daily-check:
+    if: ${{ github.event_name == 'schedule' && github.event.schedule == '0 12 * * *' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: crawler/package-lock.json
+      - name: Checagem leve de disponibilidade das fontes (1 req/fonte)
+        working-directory: crawler
+        run: |
+          npm ci
+          node -e "
+            const { fetchHTML } = require('./http.js');
+            const sources = require('./sources/index.js');
+            (async () => {
+              let ok = 0;
+              for (const s of sources) {
+                try { await fetchHTML(s.base + '/', { retries: 1, timeout: 12000 }); ok++; }
+                catch (e) { console.error('[DOWN] ' + s.nome + ': ' + e.message); }
+              }
+              console.log(ok + '/' + sources.length + ' fontes acessíveis.');
+              if (ok < sources.length) process.exitCode = 1;
+            })();
+          "
