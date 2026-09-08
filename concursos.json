@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-08T16:38:56.591Z",
+  "generatedAt": "2026-09-08T17:34:17.070Z",
   "schedule": "semanal",
   "sources": {
     "existing": {
       "ok": true,
-      "count": 53
+      "count": 48
     }
   },
-  "count": 53,
+  "count": 48,
   "concursos": [
     {
       "id": "fgv-seplagrj",
@@ -31,6 +31,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/seplagrj",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -57,6 +58,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/seducpa26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -82,6 +84,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/tjrsjuiz26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -107,6 +110,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/trf5juiz26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -133,6 +137,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/sesto26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -156,6 +161,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/pms2026",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -181,6 +187,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/pcpr26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -207,6 +214,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/dataprev26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -232,6 +240,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/dperj2026",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -257,6 +266,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/tjpe26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -283,6 +293,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/seducsp26tecnico",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -309,6 +320,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/seducsp26edbasica",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -332,6 +344,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/navbrasil26",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -355,6 +368,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/alema23",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -378,6 +392,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/alesc23",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -403,6 +418,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/pgm.niteroi23",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -428,6 +444,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/csjt23",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -453,6 +470,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/tjmsjuiz23",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -478,6 +496,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/rfb22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -503,6 +522,7 @@
       "dt_prova": null,
       "regime": "clt",
       "link": "https://conhecimento.fgv.br/concursos/banestes22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -526,6 +546,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/cgmrj23",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -549,6 +570,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/mpsp",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -575,6 +597,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/tcees22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -593,14 +616,15 @@
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
-      "vagas": null,
+      "salario": 11563.77,
+      "vagas": 530,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
-      "dt_inscricao_fecha": null,
+      "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
       "regime": "militar",
       "link": "https://conhecimento.fgv.br/concursos/pmespcabo22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -627,6 +651,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/agenersa2022",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -650,6 +675,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/cgesc22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -675,6 +701,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/seadap.peritos22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -701,6 +728,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/pss.sejusp22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -720,14 +748,15 @@
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
-      "vagas": null,
+      "salario": 11563.77,
+      "vagas": 530,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
-      "dt_inscricao_fecha": null,
+      "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
       "regime": "militar",
       "link": "https://conhecimento.fgv.br/concursos/pmesqos2022",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -754,6 +783,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/trt13",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -780,6 +810,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://conhecimento.fgv.br/concursos/trt16",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -803,6 +834,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/senado22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -829,136 +861,10 @@
       "dt_prova": null,
       "regime": "militar",
       "link": "https://conhecimento.fgv.br/concursos/cbmerj22",
+      "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
       "status": "Edital publicado"
-    },
-    {
-      "id": "fundatec-1114",
-      "orgao": "ARTESP - Agência Reguladora de Serviços Públicos Delegados de Transporte do Estado de São Paulo",
-      "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [
-        "cultura",
-        "logistica"
-      ],
-      "cidade": "São Paulo",
-      "estado": "SP",
-      "lat": -23.5505,
-      "lng": -46.6333,
-      "salario": null,
-      "vagas": null,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": "2026-08-26",
-      "dt_inscricao_fecha": "2026-09-08",
-      "dt_prova": null,
-      "regime": "estatutario",
-      "link": "https://www.fundatec.org.br/portal/concursos/index_concursos.php?concurso=1114",
-      "fonte": "Fundatec",
-      "statusRaw": "",
-      "status": "Inscrições abertas",
-      "edital": "https://concursos-publicacoes.s3.amazonaws.com/1114/publico/edital_abertura/edital_abertura_11146a8ef6c0106c2.pdf?id=6aa039b5c03a3"
-    },
-    {
-      "id": "fundatec-1110",
-      "orgao": "Prefeitura e Câmara Municipal de Redentora",
-      "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [
-        "tecnologia"
-      ],
-      "cidade": "Redentora",
-      "estado": "RS",
-      "lat": -30.0346,
-      "lng": -51.2177,
-      "salario": 130,
-      "vagas": 3,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": "2026-08-13",
-      "dt_inscricao_fecha": "2026-09-11",
-      "dt_prova": null,
-      "regime": "estatutario",
-      "link": "https://www.fundatec.org.br/portal/concursos/index_concursos.php?concurso=1110",
-      "fonte": "Fundatec",
-      "statusRaw": "",
-      "status": "Inscrições abertas",
-      "edital": "https://concursos-publicacoes.s3.amazonaws.com/1110/publico/edital_abertura/edital_1_6a91d2fbb3fca.pdf?id=6aa039ba39972"
-    },
-    {
-      "id": "fundatec-1111",
-      "orgao": "Prova AMB, AMRIGS, ACM E AMMS 01/",
-      "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
-      "cidade": "Não informado",
-      "estado": "",
-      "lat": null,
-      "lng": null,
-      "salario": null,
-      "vagas": null,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": "2026-09-09",
-      "dt_inscricao_fecha": "2026-10-19",
-      "dt_prova": null,
-      "regime": null,
-      "link": "https://www.fundatec.org.br/portal/concursos/index_concursos.php?concurso=1111",
-      "fonte": "Fundatec",
-      "statusRaw": "",
-      "status": "Edital publicado",
-      "edital": "https://concursos-publicacoes.s3.amazonaws.com/1111/publico/edital_abertura/edital_abertura_11116aa01c8672169.pdf?id=6aa039c4c0234"
-    },
-    {
-      "id": "fundatec-1115",
-      "orgao": "TJ/PR - Tribunal de Justiça do Paraná",
-      "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": "superior",
-      "area": [
-        "juridica"
-      ],
-      "cidade": "Justiça do Paraná TJ",
-      "estado": "PR",
-      "lat": -25.4284,
-      "lng": -49.2733,
-      "salario": 23264.47,
-      "vagas": 2,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": "2026-08-17",
-      "dt_inscricao_fecha": "2026-09-14",
-      "dt_prova": null,
-      "regime": "estatutario",
-      "link": "https://www.fundatec.org.br/portal/concursos/index_concursos.php?concurso=1115",
-      "fonte": "Fundatec",
-      "statusRaw": "",
-      "status": "Inscrições abertas",
-      "edital": "https://concursos-publicacoes.s3.amazonaws.com/1115/publico/edital_abertura/edital_abertura_11156a8339c8c7850.pdf?id=6aa039c637261"
-    },
-    {
-      "id": "fundatec-1123",
-      "orgao": "UCPel - Universidade Católica de Pelotas",
-      "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
-      "cidade": "Pelotas",
-      "estado": "",
-      "lat": -31.7654,
-      "lng": -52.3376,
-      "salario": null,
-      "vagas": null,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": "2026-08-20",
-      "dt_inscricao_fecha": "2026-10-14",
-      "dt_prova": null,
-      "regime": null,
-      "link": "https://www.fundatec.org.br/portal/concursos/index_concursos.php?concurso=1123",
-      "fonte": "Fundatec",
-      "statusRaw": "",
-      "status": "Inscrições abertas",
-      "edital": "https://concursos-publicacoes.s3.amazonaws.com/1123/publico/edital_abertura/edital_abertura_11236a87394f0b87f.pdf?id=6aa039c7c0233"
     },
     {
       "id": "idecan-278",
@@ -979,6 +885,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=278",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1006,6 +913,7 @@
       "dt_prova": null,
       "regime": "militar",
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=259",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1032,6 +940,7 @@
       "dt_prova": null,
       "regime": "militar",
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=260",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1055,6 +964,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=254",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1078,6 +988,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=265",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1103,6 +1014,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=253",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1126,6 +1038,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=50",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1149,6 +1062,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=49",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1172,6 +1086,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=48",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1195,6 +1110,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=28",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1218,6 +1134,7 @@
       "dt_prova": null,
       "regime": null,
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=29",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1243,6 +1160,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://concurso.idecan.org.br/Concurso.aspx?ID=1",
+      "edital": "",
       "fonte": "IDECAN",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1268,6 +1186,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://portal.ifpe.edu.br/ingresso/trabalhe-no-ifpe/concurso-tecnico-administrativo/",
+      "edital": "https://portal.ifpe.edu.br/wp-content/uploads/2026/06/RETIFICACAO-Edital-15-26-IFPE-Linguagem-Simples__compressed_compressed.pdf",
       "fonte": "IFPE (Instituto Federal de PE)",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1293,6 +1212,7 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://portal.ifpe.edu.br/ingresso/trabalhe-no-ifpe/concurso-professor/",
+      "edital": "https://portal.ifpe.edu.br/wp-content/uploads/2026/06/RETIFICACAO-Edital-15-26-IFPE-Linguagem-Simples__compressed_compressed.pdf",
       "fonte": "IFPE (Instituto Federal de PE)",
       "statusRaw": "",
       "status": "Edital publicado"
@@ -1318,9 +1238,23 @@
       "dt_prova": null,
       "regime": "estatutario",
       "link": "https://portal.ifpe.edu.br/ingresso/trabalhe-no-ifpe/concurso-professor-2/",
+      "edital": "https://portal.ifpe.edu.br/wp-content/uploads/2026/06/RETIFICACAO-Edital-15-26-IFPE-Linguagem-Simples__compressed_compressed.pdf",
       "fonte": "IFPE (Instituto Federal de PE)",
       "statusRaw": "",
       "status": "Edital publicado"
     }
-  ]
+  ],
+  "llm": {
+    "model": "gemini-3.6-flash",
+    "processados": 18,
+    "nAlterados": 0,
+    "nErros": 18,
+    "lidosDeEdital": 0,
+    "estimados": 0,
+    "semEdital": 0,
+    "aplicado": true,
+    "offset": 0,
+    "limit": null,
+    "cache": "/home/runner/work/caca-prova/caca-prova/crawler/edital_cache"
+  }
 }
