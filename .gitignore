@@ -19,3 +19,6 @@ crawler/db/
 
 # Credenciais de deploy (Cloudflare) — NUNCA commitar
 .env.deploy
+
+# build gerado (build-config + build-pages) — nao versionar
+dist/
