@@ -18,8 +18,19 @@ node index.js --source=fgv
 | Código | Fonte | Estrutura | Observação |
 |--------|-------|-----------|-----------|
 | `fgv` | FGV Conhecimento | lista de concursos | aceita nosso bot; título descreve o órgão |
-| `fundatec` | Fundatec | listas "abertos"/"em andamento" + detalhe | extrai **datas de inscrição** no detalhe |
-| `idecan` | IDECAN (`www`) | lista na home | usa o link oficial; o portal de detalhe é WAF |
+| `fcc` | Fundação Carlos Chagas (FCC) | lista na home (lista-only) | **robots.txt** proíbe `/concursos/` e PDFs → não abrimos detalhe; enriquecimento preenche salário/datas |
+| `ibade` | IBADE (portal) | cards de editais com órgão + status | ~100 editais; status da seção (abertos/andamento/encerrados); `keepActiveOnly` filtra encerrados |
+| `fundatec` | Fundatec | listas "abertos"/"em andamento" + detalhe | extrai **datas de inscrição** no detalhe (mais lenta: ~90s) |
+| `idecan` | IDECAN (`www`) | lista na home | usa o link oficial; o portal de detalhe é WAF (bloqueio intermitente) |
+| `ifpe` | IFPE | portal "Edital e anexos" | resolve o **PDF do edital** (campo `edital`) |
+| `pci` | PCI Concursos | cards (orgão+cargo+salário+data) | **duplo papel**: (1) enriquece os editais oficiais; (2) **fonte** que ADICIONA concursos que as fontes oficiais não cobrem (ex.: bancas WAF-bloqueadas). Link do PCI (agregador), não oficial |
+
+### Fontes avaliadas e NÃO integradas como fonte própria (respeitando cada site)
+- **VUNESP, IBFC, Consulplan, Quadrix** → `403`/desafio anti-bot (WAF); não contornamos.
+- **CEBRASPE, AOCP** → página é SPA (dados carregados por JS/API); nosso crawler é estático.
+- **CESGRANRIO** → `403 "The request is blocked"` (WAF) até no `robots.txt`; porém os concursos dela entram pelo **PCI** (agregador).
+- **FAURGS** → lista renderizada via JS (body só CSS).
+- **Portais diretos (estado/prefeituras de PE, UPE, etc.)** → instáveis/DNS; aguardamos a Etapa 5 (headless).
 
 > **Legalidade:** respeitamos `robots.txt` (regras por `User-agent`, precedência da regra
 > mais específica; `Allow: /` libera), usamos `User-Agent` identificável com contato,
@@ -42,7 +53,7 @@ node index.js --source=fgv
 
 ## Configuração (`config.js`)
 
-- `cronUtc`: `0 6 * * 3` (quarta 06:00 UTC = 03:00 Recife).
+- `cronUtc`: `0 6 * * 6` (sábado 06:00 UTC = 03:00 Recife) — raspagem + Lote 1 de IA.
 - `minIntervalMs`: 1000 (rate-limit).
 - `maxDetails`: páginas de detalhe para enriquecer datas.
 - `keepActiveOnly`: mantém só concursos ativos (descarta inscrições encerradas/concluídos).

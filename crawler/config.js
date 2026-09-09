@@ -11,7 +11,7 @@ module.exports = {
   cronDailyUtc: "0 12 * * *",
   schedule: "semanal",
   // Prioridade das fontes (a primeira vence em caso de duplicata).
-  order: ["fgv", "fundatec", "idecan", "ifpe"],
+  order: ["fgv", "fcc", "ibade", "fundatec", "idecan", "ifpe"],
   // Polidez: intervalo mínimo entre requisições (ms). 1000ms ~ 60 req/min.
   minIntervalMs: 1000,
   userAgent:
@@ -25,5 +25,8 @@ module.exports = {
   // Enriquecimento com o PCI Concursos (preenche salário/vagas/escolaridade/data
   // dos editais oficiais, mantendo o link oficial). Desative com enrichPci:false.
   enrichPci: true,
+  // PCI também ADICIONA concursos que as fontes oficiais não cobrem (ex.: bancas
+  // WAF-bloqueadas como CESGRANRIO, VUNESP, CEBRASPE). Desative com pciAsSource:false.
+  pciAsSource: true,
   outFile: "concursos.json",
 };

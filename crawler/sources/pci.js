@@ -13,15 +13,15 @@
 // enriquecimento (crawler/enrich.js).
 const cheerio = require("cheerio");
 const { fetchHTML, UA } = require("../http.js");
-const { data } = require("../norm.js");
+const { data, buildRecord, salario } = require("../norm.js");
 
 const BASE = "https://www.pciconcursos.com.br";
 const LIST = `${BASE}/concursos/`;
 
 module.exports = {
   code: "pci",
-  nome: "PCI Concursos (enriquecimento)",
-  descricao: "Agregador de concursos — usado apenas para enriquecer (salário, escolaridade, data) os editais das fontes oficiais.",
+  nome: "PCI Concursos",
+  descricao: "Agregador de concursos — enriquece os editais das fontes oficiais e, como fonte, adiciona concursos que as fontes oficiais não cobrem.",
   base: BASE,
   ua: UA,
   // Busca a escolaridade -> id do schema (fundamental|medio|tecnico|superior|pos).
@@ -40,8 +40,12 @@ module.exports = {
     const $ = cheerio.load(html);
     const cards = [];
     $(".ca").each((i, el) => {
-      const title = $(el).find("a").first().text().replace(/\s+/g, " ").trim();
+      const a = $(el).find("a").first();
+      const title = a.text().replace(/\s+/g, " ").trim();
       if (!title || title.length < 4) return;
+      const link = (a.attr("href") || "").startsWith("http")
+        ? a.attr("href")
+        : `${BASE}${a.attr("href") || ""}`;
       const cd = $(el).find(".cd").first();
       const ce = $(el).find(".ce span").first();
       const cdText = cd.text().replace(/\s+/g, " ").trim();
@@ -55,6 +59,7 @@ module.exports = {
       const dataTxt = ce.text().replace(/\s+/g, " ").trim();
       cards.push({
         orgao: title,                       // ex.: "Transpetro - Petrobras Transporte S.A."
+        link,
         cdText, cargos: cargosTxt,
         escolaridade: this._escolaridade(escTxt),
         dataTxt: dataTxt,                   // ex.: "14/09/2026"
@@ -63,4 +68,61 @@ module.exports = {
     });
     return cards;
   },
+  // Converte os cards em registros (usado para PCI como FONTE, ver buildRecords abaixo).
+  buildRecords,
 };
+
+// ---- PCI COMO FONTE (adiciona concursos, além de enriquecer) ----
+// Converte os cards públicos em registros no schema do app. Usado para ADICIONAR
+// concursos que as fontes oficiais não cobrem (ex.: CESGRANRIO, VUNESP, CEBRASPE,
+// que estão WAF-bloqueados). O link é o do PCI (agregador); por isso estes registros
+// ficam marcados com `fonteCode:"pci"` e `link` PCI (não oficial).
+const CARGO_GENERICO = /vários cargos|diversos cargos|todos os cargos|não informado/i;
+function buildRecords(cards) {
+  const out = [];
+  for (const c of cards || []) {
+    const orgao = (c.orgao || "").replace(/\s+/g, " ").trim();
+    if (!orgao) continue;
+    const cargos = (c.cargos || "").replace(/\s+/g, " ").trim();
+    const cargo = cargos && !CARGO_GENERICO.test(cargos) ? cargos : null;
+    // salário parseado (número), como o enrich.js faz — evita Number("1.234,56")=NaN
+    const sal = salario(c.raw);
+    // data única e futura -> fecha de inscrição; intervalos ("09 a22/09/2026") ficam null
+    let dt = null;
+    const dm = String(c.dataTxt || "").match(/(\d{1,2}\/\d{1,2}\/\d{4})/);
+    if (dm) {
+      const d = data(dm[1]);
+      if (d && new Date(d + "T00:00:00").getTime() >= Date.now()) dt = d;
+    }
+    const rec = buildRecord({
+      fonte: "PCI Concursos",
+      fonteCode: "pci",
+      id: `pci-${slug(c.link)}`,
+      orgao,
+      cargo,
+      salario: sal || undefined,
+      link: c.link,
+      titulo: `${orgao}${cargo ? " — " + cargo : ""}`,
+    });
+    if (c.escolaridade) rec.escolaridade = c.escolaridade; // buildRecord infere; aqui usamos o do card
+    if (dt) rec.dt_inscricao_fecha = dt;
+    if (dt) {
+      // deriva o status pela data (similar ao status() do app)
+      rec.status = new Date(dt + "T00:00:00").getTime() >= Date.now() ? "Inscrições abertas" : "Inscrições encerradas";
+    }
+    out.push(rec);
+  }
+  return out;
+}
+
+function slug(url) {
+  // usa o último segmento do path (o slug da notícia/concurso) para um id único
+  try {
+    const u = new URL(url);
+    const seg = (u.pathname.split("/").filter(Boolean).pop() || "").toLowerCase();
+    const m = seg.match(/[a-z0-9][a-z0-9-]{4,}/);
+    return (m ? m[0] : seg).replace(/[^a-z0-9-]/g, "").slice(0, 24) || "item";
+  } catch {
+    return "item";
+  }
+}

@@ -232,3 +232,67 @@ python3 serve.py 8080       # http://localhost:8080/index.html
     `npm i --no-save wrangler@3.112.0` reinstala o wrangler (Node 20).
 - **Pendências de sempre (externas):** secret `LLM_API_KEY` no GitHub, secrets VAPID + redeploy do worker
   no Cloudflare, `git push` dos arquivos de agendamento (`.github/`, `crawler/`, `worker/`).
+
+---
+
+## 🆕 Sessão 08/09/2026 (continuação) — deploy, cache purge, workflow e Item 2
+
+> **Estado ATUAL de produção (confirmado):** `cacaprova.com.br` e `caca-prova.pages.dev`
+> → **55 concursos, 40 `fonteDados:"edital"` + 15 `"estimado"`, R$130=0, salários MANTIDOS (decisão).**
+
+### 🔧 O que foi feito nesta sessão
+
+1. **Workflow `semana-ia.yml` corrigido.** O job `sabado` fazia `git add -A concursos.json crawler/out crawler/db`,
+   e como `crawler/out`/`crawler/db` são gitignored, o `git add` falhava (exit 1). Corrigido para `git add -A concursos.json`
+   (espelha `domingo`/`segunda`). **Validação:** run do `sabado` → **Success** (20m 34s), commit `0ed38cc`.
+
+2. **Deploy regrediu a produção e foi RESTAURADO.**
+   - Causa: o clone local tinha o `concursos.json` **cru** (53, sem `fonteDados`), e o `build-pages` copiou ele → sobrescreveu o bom.
+   - Recuperado o acervo bom do backup `scripts/backups/concursos.llm.20260908-143616.json` (55/40+15, sem R$130).
+   - **Decisão do usuário: MANTER salários** (repetidos são legítimos). Restaurado e **redeploy feito** → produção confirmada 55/40+15, R$130=0, `generatedAt` novo. **Cache purgado** (Cloudflare → zona → Caching → Purge Everything).
+
+3. **Node 22 instalado no terminal do usuário** (via nvm; `node -v` = v22.23.2, `npm` = 10.9.0). O `npm` do Ubuntu (snap) era o problema.
+
+4. **Token Cloudflare de Pages:** o token certo é o **`caca-prova-deploy`** (perm **Conta → Cloudflare Pages → Editar**;
+   recursos = conta `gmsouza25@gmail.com`). O "Cloudflare Agent Token" NÃO serve (9106). Criar em API Tokens → "Criar token
+   personalizado" (ou modelo) e **copiar o valor na hora** (o painel não mostra de novo). Conta `294d134330d5b019e048675a56cc8b84`.
+   ⚠️ Um token com "Cloudflare Pages" pode falhar com 9106 se não tiver a permissão certa/recursos da conta certa.
+
+### 🕷️ Item 2 — ampliar o acervo (FEITO)
+
+Fontes oficiais: **fgv, fcc, ibade, fundatec, idecan, ifpe** (config.order).
+- **`fcc.js` (NOVA):** Fundação Carlos Chagas. **Lista-only** — o `robots.txt` bloqueia `/concursos/` e `*.pdf`, então
+  NÃO abrimos detalhe nem baixamos PDF (respeitamos o site). → 12 registros limpos (órgão + link + estado).
+  `CARGO_SPLIT` separa títulos concatenados ("ÓrgãoCargo"). Só enriquecimento preenche o resto.
+- **`ibade.js` (NOVA):** IBADE. Cards de editais com órgão + status (abertos/andamento/encerrados). → **104 registros**.
+- **`pci.js` — PCI agora TAMBÉM é FONTE (além de enriquecer).** `buildRecords()` converte os cards HTML em registros.
+  No `index.js`, após o enriquecimento, são **adicionados os concursos que as fontes oficiais NÃO cobrem**
+  (filtra por similaridade de órgão ≥ 0.6 para não duplicar). **Decisão do usuário: sim, usar PCI como fonte.**
+  → **+304 concursos** (391 únicos · 87 já cobertos). Link = **do PCI** (agregador, não oficial).
+  `config.pciAsSource:true` (desative com `false`); `keepActiveOnly` filtra encerrados/concluídos.
+- **Resultado dry-run:** `fgv 33 · fcc 12 · ibade 104 · fundatec 57 · idecan 12 · ifpe 4` + `+304 via PCI`
+  → **525 concursos únicos** (antes 55). `keepActiveOnly` reduz os encerrados no acervo final.
+
+### 🔒 Fontes avaliadas e NÃO integradas (respeitando cada site)
+- **CESGRANRIO** → `403 "The request is blocked"` (WAF) até no `robots.txt` e por outra rota de rede. **Bloqueio de IP de
+  datacenter** (o mesmo do GitHub Actions) → não dá para raspar. **Coberta via PCI** (agregador).
+- VUNESP, IBFC, Consulplan, Quadrix → 403/WAF. CEBRASPE, AOCP → SPA. FAURGS → JS. Portais diretos de PE → instáveis.
+
+### ⚠️ Pendências para a próxima sessão
+- **`git push` dos arquivos novos ao repo:** `crawler/sources/fcc.js`, `crawler/sources/ibade.js`, `crawler/sources/pci.js`,
+  `crawler/index.js`, `crawler/config.js`, `crawler/README.md`, `.github/workflows/semana-ia.yml` (e `worker/*` para o push).
+- **Escala:** o acervo cresceu para ~525 (máximo). Se ficar grande demais, ajustar em `crawler/config.js`
+  (`pciAsSource:false` volta a só enriquecer; ou `keepActiveOnly`).
+- **Cota Gemini (~20 req/dia):** `fonteDados` (edital/estimado) preenche aos poucos (18-19/dia nos 3 lotes).
+  Concursos novos já aparecem com órgão/cargo/salário/estado/link/status; `fonteDados` só refina.
+- **Driver `rodar-multimodelo.mjs` v2** está reescrito (`--check`/`--ids`/`--dry-only`, proteção 429), **ainda não testado pós-escrita**.
+- **Lembrar:** teste manual pós-push = GitHub Actions → "Ciclo semanal" → Run workflow; e o deploy + **cache purge**
+  (ver `docs/CONFIGURAR-INTEGRACOES.md` seção "Deploy + Cache purge").
+- **Worker de push:** deploy no Cloudflare ainda não feito pelo usuário (secrets VAPID prontos, `wrangler.toml` ok).
+
+### 🧹 Workspace resetado (para continuar limpo)
+- Removidos: `uploads/`, `node_modules/`, `crawler/node_modules/`, `dist/`, `.wrangler/`, `crawler/{out,db,edital_cache}`,
+  `concursos.llm.json` (scratch), backups redundantes (`antes-limpeza`, `antes-llm`), logs/tmp, `.npm`.
+- Mantidos: projeto completo, `concursos.json` (= 55/40+15), `scripts/backups/concursos.llm.20260908-143616.json`
+  (acervo bom 55) e `concursos.pre-releitura-20260908-142226.json` (pré-LLM), `.env*` (gitignored, segredos do usuário), `docs/`.
+- **Reinstalar p/ builds:** `npm i` (pdf-parse) e `npm i --no-save wrangler@3.112.0` (Node 20/22) antes de `build-config`+`build-pages`+deploy.

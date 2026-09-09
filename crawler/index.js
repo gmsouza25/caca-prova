@@ -12,7 +12,7 @@ const { writeOutput, dedupe, mergeWithCache, readPrevious, exportSQL } = require
 const config = require("./config.js");
 const sources = require("./sources/index.js");
 const pciSource = require("./sources/pci.js");
-const { enrich } = require("./enrich.js");
+const { enrich, similar } = require("./enrich.js");
 
 const argv = process.argv.slice(2);
 const flag = (name) => {
@@ -86,10 +86,12 @@ async function runAll() {
   // Preenche salário/vagas/escolaridade/data dos editais oficiais com os fatos
   // da listagem pública do PCI, mantendo o link oficial. Se o PCI falhar, ignora.
   let pciStatus = { ok: false, count: 0, matched: 0, changes: 0 };
+  let pciCards = null;
   if (!filtered && config.enrichPci !== false) {
     const t0 = Date.now();
     try {
       const cards = await pciSource.fetchCards();
+      pciCards = cards;
       if (cards.length) {
         const { records, matched, changes } = enrich(current, cards);
         current = records;
@@ -102,6 +104,25 @@ async function runAll() {
       pciStatus = { ok: false, count: 0, matched: 0, changes: 0, error: e.message };
       console.error(`  ✖ [pci] PCI Concursos: ${e.message}`);
     }
+  }
+
+  // ---- PCI COMO FONTE: adiciona concursos que as fontes oficiais NÃO cobrem ----
+  // O PCI lista todas as bancas nacionalmente, inclusive as WAF-bloqueadas no nosso
+  // ambiente (CESGRANRIO, VUNESP, CEBRASPE etc.). Aqui transformamos os cards em
+  // registros e adicionamos apenas os que NÃO duplicam um órgão já vindo de uma
+  // fonte oficial (evita duplicata). Link é o do PCI (agregador), não oficial.
+  if (!filtered && pciCards && pciCards.length && config.pciAsSource !== false) {
+    const t0 = Date.now();
+    const pciNew = pciSource.buildRecords(pciCards);
+    const seenId = new Set();
+    const pciUnique = [];
+    for (const r of pciNew) if (!seenId.has(r.id)) { seenId.add(r.id); pciUnique.push(r); }
+    const toAdd = pciUnique.filter(
+      (r) => !current.some((c) => similar(c.orgao || "", r.orgao || "") >= 0.6)
+    );
+    const covered = pciUnique.length - toAdd.length;
+    current.push(...toAdd);
+    console.log(`  ✔ [pci-fonte] +${toAdd.length} concursos novos via PCI (${pciUnique.length} únicos · ${covered} já cobertos por fonte oficial) (${Date.now() - t0}ms)`);
   }
 
   // Merge com o crawl anterior (para não "sumir" a lista se uma fonte falhar).
