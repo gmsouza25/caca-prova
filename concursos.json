@@ -499,7 +499,7 @@
       "id": "fgv-rfb22",
       "orgao": "Receita Federal do Brasil",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor / Analista",
       "escolaridade": null,
       "area": [
         "fiscal"
@@ -519,7 +519,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-banestes22",
@@ -545,13 +546,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Contador",
       "escolaridade": null,
       "area": [],
       "cidade": "Rio de Janeiro",
@@ -569,7 +571,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-mpsp",
@@ -620,7 +623,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmespcabo22",
@@ -638,7 +642,7 @@
       "lng": -46.6333,
       "salario": 11563.77,
       "vagas": 530,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-03-02",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
@@ -647,7 +651,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-agenersa2022",
@@ -674,14 +679,15 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap",
       "orgao": "Secretaria de Estado da Administração - SEAD-AP - Peritos",
       "esfera": "Estadual",
       "cargo": "AP - Peritos",
-      "escolaridade": null,
+      "escolaridade": "superior",
       "area": [
         "administracao"
       ],
@@ -691,7 +697,7 @@
       "lng": -51.0694,
       "salario": 6590.47,
       "vagas": 376,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-02-23",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-01",
       "dt_prova": null,
@@ -700,7 +706,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgesc22",
@@ -724,25 +731,26 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pss",
       "orgao": "Secretaria de Estado de Justiça e Segurança Pública - SEJUSP",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Agente de Segurança Penitenciário",
       "escolaridade": null,
       "area": [
         "seguranca",
         "administracao"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
       "lat": null,
       "lng": null,
       "salario": 14675.58,
       "vagas": 76,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-10-09",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-05",
       "dt_prova": null,
@@ -751,7 +759,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmesqos2022",
@@ -770,7 +779,7 @@
       "lng": -46.6333,
       "salario": 11563.77,
       "vagas": 530,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-06-20",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
@@ -779,7 +788,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt13",
@@ -791,13 +801,13 @@
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "João Pessoa",
+      "estado": "PB",
       "lat": null,
       "lng": null,
       "salario": 37765.55,
       "vagas": 11,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-08-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-09-28",
       "dt_prova": null,
@@ -806,7 +816,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt16",
@@ -824,7 +835,7 @@
       "lng": null,
       "salario": 37765.55,
       "vagas": 11,
-      "dt_publicacao": null,
+      "dt_publicacao": "2025-10-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-09-28",
       "dt_prova": null,
@@ -833,7 +844,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-senado22",
@@ -875,7 +887,7 @@
       "lng": -43.1729,
       "salario": null,
       "vagas": 440,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-01-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-09-21",
       "dt_prova": null,
@@ -884,7 +896,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-fdsbc126",
@@ -9737,9 +9750,9 @@
   "llm": {
     "model": "gemini-3.6-flash",
     "processados": 18,
-    "nAlterados": 18,
-    "nErros": 0,
-    "lidosDeEdital": 18,
+    "nAlterados": 13,
+    "nErros": 5,
+    "lidosDeEdital": 13,
     "estimados": 0,
     "semEdital": 0,
     "aplicado": true,
