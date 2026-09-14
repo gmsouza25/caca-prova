@@ -596,7 +596,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tcees22",
@@ -869,7 +870,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cbmerj22",
@@ -903,17 +905,17 @@
       "id": "fcc-fdsbc126",
       "orgao": "FDSBC - Faculdade de Direito de São Bernardo do Campo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Assistente Administrativo",
+      "escolaridade": "medio",
       "area": [
         "juridica"
       ],
       "cidade": "São Bernardo do Campo",
-      "estado": "",
+      "estado": "SP",
       "lat": -23.6934,
       "lng": -46.565,
-      "salario": null,
-      "vagas": null,
+      "salario": 3500,
+      "vagas": 5,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -923,19 +925,21 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-mprev126",
       "orgao": "Manaus Previdência - MANAUSPREV",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Previdenciário",
       "escolaridade": "superior",
       "area": [
         "trabalho"
       ],
       "cidade": "Manaus",
-      "estado": "",
+      "estado": "AM",
       "lat": -3.11903,
       "lng": -60.0217,
       "salario": 9175.25,
@@ -949,23 +953,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-plane326",
       "orgao": "PLANEJAR - Associação Brasileira de Planejamento Financeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista Administrativo",
+      "escolaridade": "superior",
       "area": [
         "financeira"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "São Paulo",
+      "estado": "SP",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 4500,
+      "vagas": 2,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -975,13 +981,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-sefsc126",
       "orgao": "Secretaria de Estado da Fazenda de Santa Catarina",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -1001,13 +1009,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tcego125",
       "orgao": "Tribunal de Contas do Estado de Goiás",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor de Controle Externo",
       "escolaridade": "medio",
       "area": [
         "juridica",
@@ -1028,20 +1038,22 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-sface125",
       "orgao": "Secretaria da Fazenda do Estado do CearáAuditor-Fiscal da Fazenda Estadual 1ª Classe",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor-Fiscal da Fazenda Estadual",
       "escolaridade": "superior",
       "area": [
         "fiscal",
         "administracao"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Fortaleza",
+      "estado": "CE",
       "lat": null,
       "lng": null,
       "salario": 25270.68,
@@ -1055,21 +1067,23 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-mpeal125",
       "orgao": "Ministério Público do Estado de Alagoas",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista do Ministério Público",
+      "escolaridade": "superior",
       "area": [],
       "cidade": "Maceió",
       "estado": "AL",
       "lat": -9.66599,
       "lng": -35.7353,
-      "salario": null,
-      "vagas": null,
+      "salario": 7000,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1079,7 +1093,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpema125",
@@ -1094,8 +1110,8 @@
       "estado": "MA",
       "lat": -2.52972,
       "lng": -44.3028,
-      "salario": null,
-      "vagas": null,
+      "salario": 32228.53,
+      "vagas": 15,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1105,7 +1121,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpeba125",
@@ -1120,8 +1138,8 @@
       "estado": "BA",
       "lat": -12.9777,
       "lng": -38.5016,
-      "salario": null,
-      "vagas": null,
+      "salario": 32200,
+      "vagas": 15,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1131,21 +1149,23 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-alems125",
       "orgao": "Assembleia Legislativa de Mato Grosso do Sul",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Legislativo",
       "escolaridade": null,
       "area": [],
       "cidade": "Cuiabá",
       "estado": "MT",
       "lat": -15.5961,
       "lng": -56.0967,
-      "salario": null,
-      "vagas": null,
+      "salario": 6500,
+      "vagas": 20,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1155,14 +1175,16 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-127",
       "orgao": "Secretaria Municipal de Educação e Cultura de Chapadão do Sul/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Diretor de Escola e Diretor Adjunto de Escola",
+      "escolaridade": "superior",
       "area": [
         "educacao",
         "administracao",
@@ -1183,16 +1205,17 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
       "orgao": "PREFEITURA MUNICIPAL DE ITARANA",
       "esfera": "Municipal",
       "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "escolaridade": "superior",
       "area": [],
-      "cidade": "Não informado",
+      "cidade": "Itarana",
       "estado": "",
       "lat": null,
       "lng": null,
@@ -1207,7 +1230,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-125",
@@ -1231,7 +1255,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-124",
@@ -1244,7 +1269,7 @@
         "administracao"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 6208.41,
@@ -1258,7 +1283,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -1282,7 +1308,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-118",
@@ -1299,7 +1326,7 @@
       "lng": -44.3028,
       "salario": null,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-06-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -1308,7 +1335,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-110",
@@ -1328,13 +1356,14 @@
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
-      "dt_prova": null,
+      "dt_prova": "2026-09-20",
       "regime": null,
       "link": "https://portal.ibade.selecao.site/edital/ver/110",
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "idecan-278",
@@ -9749,11 +9778,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 13,
-    "nErros": 5,
-    "lidosDeEdital": 13,
-    "estimados": 0,
+    "processados": 19,
+    "nAlterados": 19,
+    "nErros": 0,
+    "lidosDeEdital": 9,
+    "estimados": 10,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
