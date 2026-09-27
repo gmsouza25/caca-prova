@@ -466,13 +466,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-rfb22",
       "orgao": "Receita Federal do Brasil",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor / Analista",
       "escolaridade": null,
       "area": [
         "fiscal"
@@ -486,13 +487,14 @@
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
-      "dt_prova": null,
+      "dt_prova": "2025-04-21",
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/rfb22",
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-banestes22",
@@ -518,13 +520,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Contador",
       "escolaridade": null,
       "area": [],
       "cidade": "Rio de Janeiro",
@@ -542,7 +545,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-mpsp",
@@ -566,7 +570,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tcees22",
@@ -593,7 +598,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmespcabo22",
@@ -611,7 +617,7 @@
       "lng": -46.6333,
       "salario": 11563.77,
       "vagas": 530,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-03-02",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
@@ -620,7 +626,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-agenersa2022",
@@ -647,7 +654,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap",
@@ -664,7 +672,7 @@
       "lng": -51.0694,
       "salario": 31439.06,
       "vagas": 396,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-02-23",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-19",
       "dt_prova": null,
@@ -673,7 +681,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgesc22",
@@ -697,7 +706,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmesqos2022",
@@ -716,7 +726,7 @@
       "lng": -46.6333,
       "salario": 11563.77,
       "vagas": 530,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-06-20",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
@@ -725,7 +735,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt13",
@@ -737,13 +748,13 @@
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "João Pessoa",
+      "estado": "PB",
       "lat": null,
       "lng": null,
       "salario": 37765.55,
       "vagas": 11,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-08-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-09-28",
       "dt_prova": null,
@@ -752,7 +763,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt16",
@@ -770,7 +782,7 @@
       "lng": null,
       "salario": 37765.55,
       "vagas": 11,
-      "dt_publicacao": null,
+      "dt_publicacao": "2025-10-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-09-28",
       "dt_prova": null,
@@ -779,7 +791,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-senado22",
@@ -803,7 +816,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cbmerj22",
@@ -830,7 +844,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-fempar23",
@@ -860,13 +875,13 @@
       "id": "fcc-mprev126",
       "orgao": "Manaus Previdência - MANAUSPREV",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Previdenciário",
       "escolaridade": "superior",
       "area": [
         "trabalho"
       ],
       "cidade": "Manaus",
-      "estado": "",
+      "estado": "AM",
       "lat": -3.11903,
       "lng": -60.0217,
       "salario": 9175.25,
@@ -880,7 +895,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-plane326",
@@ -10810,8 +10827,8 @@
     "processados": 18,
     "nAlterados": 16,
     "nErros": 2,
-    "lidosDeEdital": 16,
-    "estimados": 0,
+    "lidosDeEdital": 15,
+    "estimados": 1,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
