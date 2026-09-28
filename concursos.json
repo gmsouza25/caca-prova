@@ -869,7 +869,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-mprev126",
@@ -903,17 +904,17 @@
       "id": "fcc-plane326",
       "orgao": "PLANEJAR - Associação Brasileira de Planejamento Financeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista Financeiro",
+      "escolaridade": "superior",
       "area": [
         "financeira"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "São Paulo",
+      "estado": "SP",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 4500,
+      "vagas": 2,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -923,13 +924,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-sefsc126",
       "orgao": "Secretaria de Estado da Fazenda de Santa Catarina",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -949,13 +952,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tcego125",
       "orgao": "Tribunal de Contas do Estado de Goiás",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor de Controle Externo",
       "escolaridade": "medio",
       "area": [
         "juridica",
@@ -976,7 +981,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpeba125",
@@ -1002,21 +1009,23 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-alems125",
       "orgao": "Assembleia Legislativa de Mato Grosso do Sul",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista Legislativo",
+      "escolaridade": "superior",
       "area": [],
       "cidade": "Cuiabá",
       "estado": "MT",
       "lat": -15.5961,
       "lng": -56.0967,
-      "salario": null,
-      "vagas": null,
+      "salario": 6500,
+      "vagas": 15,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1026,21 +1035,23 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-alerr125",
       "orgao": "Assembleia Legislativa do Estado de Roraima",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Assistente Legislativo",
+      "escolaridade": "medio",
       "area": [],
       "cidade": "Boa Vista",
       "estado": "RR",
       "lat": 2.8197,
       "lng": -60.6733,
-      "salario": null,
-      "vagas": null,
+      "salario": 4500,
+      "vagas": 30,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1050,25 +1061,27 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-seego125",
       "orgao": "Secretaria da Economia do Estado de GoiásAuditor-Fiscal da Receita Estadual",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor-Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "fiscal",
         "financeira",
         "administracao"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Goiânia",
+      "estado": "GO",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 20924.57,
+      "vagas": 30,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1078,23 +1091,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-pgmam126",
       "orgao": "Procuradoria Geral do Município de ManausProcurador do Município de 3ª Classe",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Procurador do Município de 3ª Classe",
       "escolaridade": "superior",
       "area": [
         "juridica"
       ],
       "cidade": "Manaus",
-      "estado": "",
+      "estado": "AM",
       "lat": -3.11903,
       "lng": -60.0217,
-      "salario": null,
-      "vagas": null,
+      "salario": 19383.42,
+      "vagas": 8,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1104,7 +1119,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-129",
@@ -1122,22 +1139,23 @@
       "lng": -40.3128,
       "salario": 5500,
       "vagas": 2,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": null,
+      "dt_publicacao": "2026-09-18",
+      "dt_inscricao_abre": "2026-09-21",
       "dt_inscricao_fecha": "2026-10-20",
-      "dt_prova": null,
+      "dt_prova": "2026-12-13",
       "regime": "estatutario",
       "link": "https://portal.ibade.selecao.site/edital/ver/129",
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-127",
       "orgao": "SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA DE CHAPADÃO DO SUL/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Diretor de Escola e Diretor Adjunto de Escola",
       "escolaridade": "superior",
       "area": [
         "educacao",
@@ -1159,7 +1177,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
@@ -1189,9 +1208,15 @@
       "id": "ibade-125",
       "orgao": "CONSELHO REGIONAL DE ENFERMAGEM DO AMAZONAS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
+      "cargo": "Administrador, Analista de Sistemas, Contador, Enfermeiro Fiscal",
+      "escolaridade": "superior",
+      "area": [
+        "administracao",
+        "tecnologia",
+        "financeira",
+        "saude",
+        "fiscal"
+      ],
       "cidade": "Manaus",
       "estado": "AM",
       "lat": -3.11903,
@@ -1207,7 +1232,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-124",
@@ -1220,7 +1246,7 @@
         "administracao"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 5462.22,
@@ -1234,7 +1260,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -10824,11 +10851,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 16,
-    "nErros": 2,
-    "lidosDeEdital": 15,
-    "estimados": 1,
+    "processados": 19,
+    "nAlterados": 13,
+    "nErros": 6,
+    "lidosDeEdital": 5,
+    "estimados": 8,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
