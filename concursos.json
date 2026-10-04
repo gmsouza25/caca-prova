@@ -495,7 +495,7 @@
       "id": "fgv-rfb22",
       "orgao": "Receita Federal do Brasil",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor e Analista",
       "escolaridade": null,
       "area": [
         "fiscal"
@@ -509,13 +509,14 @@
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
-      "dt_prova": null,
+      "dt_prova": "2025-04-21",
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/rfb22",
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-banestes22",
@@ -541,13 +542,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Contador",
       "escolaridade": null,
       "area": [],
       "cidade": "Rio de Janeiro",
@@ -565,7 +567,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tcees22",
@@ -592,7 +595,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmespcabo22",
@@ -610,7 +614,7 @@
       "lng": -46.6333,
       "salario": 11563.77,
       "vagas": 530,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-03-02",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
@@ -619,7 +623,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-agenersa2022",
@@ -646,14 +651,15 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap",
       "orgao": "Secretaria de Estado da Administração - SEAD-AP - Peritos",
       "esfera": "Estadual",
       "cargo": "AP - Peritos",
-      "escolaridade": null,
+      "escolaridade": "superior",
       "area": [
         "administracao"
       ],
@@ -663,7 +669,7 @@
       "lng": -51.0694,
       "salario": 8331.35,
       "vagas": 358,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-02-23",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-29",
       "dt_prova": null,
@@ -672,7 +678,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgesc22",
@@ -696,7 +703,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-senado22",
@@ -720,7 +728,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cbmerj22",
@@ -738,7 +747,7 @@
       "lng": -43.1729,
       "salario": 12279.71,
       "vagas": 192,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-01-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-09",
       "dt_prova": null,
@@ -747,7 +756,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-fempar23",
@@ -771,7 +781,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap22",
@@ -788,7 +799,7 @@
       "lng": -51.0694,
       "salario": 8331.35,
       "vagas": 358,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-09-24",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-29",
       "dt_prova": null,
@@ -797,7 +808,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tceto22",
@@ -815,7 +827,7 @@
       "lng": -48.3317,
       "salario": 39753.22,
       "vagas": 1,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-02-10",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-26",
       "dt_prova": null,
@@ -824,13 +836,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pgesc22",
       "orgao": "Procuradoria-Geral do Estado de Santa Catarina",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Procurador do Estado",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -841,7 +854,7 @@
       "lng": -48.5485,
       "salario": 25337.61,
       "vagas": 50,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-09-06",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-05",
       "dt_prova": null,
@@ -850,7 +863,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-dpepb126",
@@ -882,17 +896,17 @@
       "id": "fcc-plane326",
       "orgao": "PLANEJAR - Associação Brasileira de Planejamento Financeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista Administrativo",
+      "escolaridade": "superior",
       "area": [
         "financeira"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "São Paulo",
+      "estado": "SP",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 5500,
+      "vagas": 2,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -902,7 +916,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-sefsc126",
@@ -10800,10 +10816,10 @@
   "llm": {
     "model": "gemini-3.6-flash",
     "processados": 18,
-    "nAlterados": 18,
-    "nErros": 0,
-    "lidosDeEdital": 18,
-    "estimados": 0,
+    "nAlterados": 15,
+    "nErros": 3,
+    "lidosDeEdital": 14,
+    "estimados": 1,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
