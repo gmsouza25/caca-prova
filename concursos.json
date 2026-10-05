@@ -870,7 +870,7 @@
       "id": "fcc-dpepb126",
       "orgao": "Defensoria Pública do Estado da Paraíba",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Defensorial",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -890,7 +890,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-plane326",
@@ -924,7 +926,7 @@
       "id": "fcc-sefsc126",
       "orgao": "Secretaria de Estado da Fazenda de Santa Catarina",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -944,13 +946,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tcego125",
       "orgao": "Tribunal de Contas do Estado de Goiás",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor de Controle Externo",
       "escolaridade": "medio",
       "area": [
         "juridica",
@@ -971,14 +975,16 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-alerr125",
       "orgao": "Assembleia Legislativa do Estado de Roraima",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista Legislativo",
+      "escolaridade": "superior",
       "area": [],
       "cidade": "Boa Vista",
       "estado": "RR",
@@ -995,17 +1001,19 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-cmprp126",
       "orgao": "Câmara Municipal de Presidente Prudente",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Agente Administrativo",
       "escolaridade": "superior",
       "area": [],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Presidente Prudente",
+      "estado": "SP",
       "lat": null,
       "lng": null,
       "salario": 9193.89,
@@ -1019,7 +1027,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-pomsp326",
@@ -1046,21 +1056,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-abgfg126",
       "orgao": "ABGF - Agência Brasileira Gestora de Fundos Garantidores e Garantias",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
-      "cidade": "Não informado",
-      "estado": "",
+      "cargo": "Analista",
+      "escolaridade": "superior",
+      "area": [
+        "financeira"
+      ],
+      "cidade": "Brasília",
+      "estado": "DF",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 8500,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1070,7 +1084,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpeba125",
@@ -1096,7 +1112,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-129",
@@ -1114,22 +1132,23 @@
       "lng": -40.3128,
       "salario": 5500,
       "vagas": 2,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": null,
+      "dt_publicacao": "2026-09-18",
+      "dt_inscricao_abre": "2026-09-21",
       "dt_inscricao_fecha": "2026-10-20",
-      "dt_prova": null,
+      "dt_prova": "2026-12-13",
       "regime": "estatutario",
       "link": "https://portal.ibade.selecao.site/edital/ver/129",
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-127",
       "orgao": "SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA DE CHAPADÃO DO SUL/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Diretor de Escola e Diretor Adjunto de Escola",
       "escolaridade": "superior",
       "area": [
         "educacao",
@@ -1142,7 +1161,7 @@
       "lng": -54.6466,
       "salario": 7838.82,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-09-29",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-09",
       "dt_prova": null,
@@ -1151,7 +1170,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
@@ -1226,7 +1246,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -10815,11 +10836,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 15,
-    "nErros": 3,
-    "lidosDeEdital": 14,
-    "estimados": 1,
+    "processados": 19,
+    "nAlterados": 11,
+    "nErros": 8,
+    "lidosDeEdital": 3,
+    "estimados": 8,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
