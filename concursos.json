@@ -409,7 +409,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-csjt23",
@@ -469,7 +470,7 @@
       "id": "fgv-rfb22",
       "orgao": "Receita Federal do Brasil",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor / Analista",
       "escolaridade": null,
       "area": [
         "fiscal"
@@ -483,13 +484,14 @@
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
-      "dt_prova": null,
+      "dt_prova": "2025-04-21",
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/rfb22",
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-banestes22",
@@ -515,15 +517,18 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Contador",
       "escolaridade": "superior",
-      "area": [],
+      "area": [
+        "financeira"
+      ],
       "cidade": "Rio de Janeiro",
       "estado": "RJ",
       "lat": -22.9068,
@@ -539,7 +544,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-mpsp",
@@ -563,7 +569,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tcees22",
@@ -590,7 +597,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmespcabo22",
@@ -608,7 +616,7 @@
       "lng": -46.6333,
       "salario": 11563.77,
       "vagas": 530,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-03-02",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
@@ -617,7 +625,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-agenersa2022",
@@ -644,14 +653,15 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap",
       "orgao": "Secretaria de Estado da Administração - SEAD-AP - Peritos",
       "esfera": "Estadual",
       "cargo": "AP - Peritos",
-      "escolaridade": null,
+      "escolaridade": "superior",
       "area": [
         "administracao"
       ],
@@ -661,7 +671,7 @@
       "lng": -51.0694,
       "salario": 8331.35,
       "vagas": 358,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-02-23",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-29",
       "dt_prova": null,
@@ -670,7 +680,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgesc22",
@@ -694,7 +705,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmesqos2022",
@@ -713,7 +725,7 @@
       "lng": -46.6333,
       "salario": 11563.77,
       "vagas": 530,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-06-20",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-16",
       "dt_prova": null,
@@ -722,7 +734,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt13",
@@ -734,13 +747,13 @@
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "João Pessoa",
+      "estado": "PB",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-08-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-05",
       "dt_prova": null,
@@ -749,7 +762,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt16",
@@ -767,7 +781,7 @@
       "lng": null,
       "salario": 16040.88,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2025-10-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-05",
       "dt_prova": null,
@@ -776,7 +790,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-senado22",
@@ -800,7 +815,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cbmerj22",
@@ -818,7 +834,7 @@
       "lng": -43.1729,
       "salario": 12279.71,
       "vagas": 192,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-01-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-09",
       "dt_prova": null,
@@ -827,7 +843,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-fempar23",
@@ -851,13 +868,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-dpepb126",
       "orgao": "Defensoria Pública do Estado da Paraíba",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Defensorial",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -877,20 +895,24 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-scmsp126",
       "orgao": "Irmandade da Santa Casa de Misericórdia de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico de Enfermagem",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "saude"
+      ],
       "cidade": "São Paulo",
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
+      "salario": 3300,
       "vagas": 40,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -901,7 +923,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fazsp126",
@@ -10582,10 +10606,10 @@
   "llm": {
     "model": "gemini-3.6-flash",
     "processados": 18,
-    "nAlterados": 16,
-    "nErros": 2,
+    "nAlterados": 18,
+    "nErros": 0,
     "lidosDeEdital": 16,
-    "estimados": 0,
+    "estimados": 2,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
