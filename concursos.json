@@ -931,7 +931,7 @@
       "id": "fcc-fazsp126",
       "orgao": "Secretaria da Fazenda e Planejamento do Estado de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -951,13 +951,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tcego125",
       "orgao": "Tribunal de Contas do Estado de Goiás",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor de Controle Externo",
       "escolaridade": "medio",
       "area": [
         "juridica",
@@ -978,24 +980,26 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-trt8r126",
       "orgao": "Tribunal Regional do Trabalho da 8ª Região",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário - Área Administrativa",
       "escolaridade": "superior",
       "area": [
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Belém",
+      "estado": "PA",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
-      "vagas": null,
+      "vagas": 5,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-05",
@@ -1005,7 +1009,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpeba125",
@@ -1020,7 +1026,7 @@
       "estado": "BA",
       "lat": -12.9777,
       "lng": -38.5016,
-      "salario": null,
+      "salario": 32200,
       "vagas": 70,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -1031,20 +1037,22 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-sface125",
       "orgao": "Secretaria da Fazenda do Estado do CearáAuditor-Fiscal da Fazenda Estadual 1ª Classe",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor-Fiscal da Fazenda Estadual",
       "escolaridade": "superior",
       "area": [
         "fiscal",
         "administracao"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Fortaleza",
+      "estado": "CE",
       "lat": null,
       "lng": null,
       "salario": 25270.68,
@@ -1058,14 +1066,16 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-alerr125",
       "orgao": "Assembleia Legislativa do Estado de Roraima",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Assistente Legislativo",
+      "escolaridade": "medio",
       "area": [],
       "cidade": "Boa Vista",
       "estado": "RR",
@@ -1082,17 +1092,19 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-cmprp126",
       "orgao": "Câmara Municipal de Presidente Prudente",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Agente Legislativo",
       "escolaridade": "superior",
       "area": [],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Presidente Prudente",
+      "estado": "SP",
       "lat": null,
       "lng": null,
       "salario": 9193.89,
@@ -1106,7 +1118,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-pomsp326",
@@ -1133,13 +1147,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-129",
       "orgao": "CONSELHO REGIONAL DE EDUCAÇÃO FÍSICA DA 22ª REGIÃO – CREF22/ES",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Advogado I, Analista Administrativo I, Contador I",
       "escolaridade": null,
       "area": [
         "educacao",
@@ -1160,13 +1176,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-127",
       "orgao": "SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA DE CHAPADÃO DO SUL/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Diretor de Escola, Diretor Adjunto de Escola",
       "escolaridade": null,
       "area": [
         "educacao",
@@ -1179,7 +1196,7 @@
       "lng": -54.6466,
       "salario": 5599.94,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-10-07",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -1188,7 +1205,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
@@ -1197,7 +1215,7 @@
       "cargo": "Cargo não informado",
       "escolaridade": null,
       "area": [],
-      "cidade": "Não informado",
+      "cidade": "Itarana",
       "estado": "",
       "lat": null,
       "lng": null,
@@ -1212,15 +1230,22 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-125",
       "orgao": "CONSELHO REGIONAL DE ENFERMAGEM DO AMAZONAS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Administrador, Analista de Sistemas, Contador, Enfermeiro Fiscal",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "administracao",
+        "tecnologia",
+        "financeira",
+        "saude",
+        "fiscal"
+      ],
       "cidade": "Manaus",
       "estado": "AM",
       "lat": -3.11903,
@@ -1236,7 +1261,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-124",
@@ -1249,7 +1275,7 @@
         "administracao"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 3611.12,
@@ -1263,7 +1289,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -10605,11 +10632,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 18,
-    "nErros": 0,
-    "lidosDeEdital": 16,
-    "estimados": 2,
+    "processados": 19,
+    "nAlterados": 13,
+    "nErros": 6,
+    "lidosDeEdital": 5,
+    "estimados": 8,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
