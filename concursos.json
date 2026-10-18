@@ -514,13 +514,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Contador",
       "escolaridade": "superior",
       "area": [],
       "cidade": "Rio de Janeiro",
@@ -538,7 +539,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmespcabo22",
@@ -556,7 +558,7 @@
       "lng": -46.6333,
       "salario": 12937.33,
       "vagas": 1320,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-03-02",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-23",
       "dt_prova": null,
@@ -565,7 +567,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tcees22",
@@ -592,7 +595,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-agenersa2022",
@@ -619,14 +623,15 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap",
       "orgao": "Secretaria de Estado da Administração - SEAD-AP - Peritos",
       "esfera": "Estadual",
       "cargo": "AP - Peritos",
-      "escolaridade": null,
+      "escolaridade": "superior",
       "area": [
         "administracao"
       ],
@@ -636,7 +641,7 @@
       "lng": -51.0694,
       "salario": 8331.35,
       "vagas": 358,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-02-23",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-29",
       "dt_prova": null,
@@ -645,7 +650,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgesc22",
@@ -669,7 +675,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tceto22",
@@ -687,7 +694,7 @@
       "lng": -48.3317,
       "salario": 39753.22,
       "vagas": 1,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-02-10",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-26",
       "dt_prova": null,
@@ -696,13 +703,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pgesc22",
       "orgao": "Procuradoria-Geral do Estado de Santa Catarina",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Procurador do Estado",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -713,7 +721,7 @@
       "lng": -48.5485,
       "salario": 25337.61,
       "vagas": 50,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-09-06",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -722,25 +730,26 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pss",
       "orgao": "Secretaria de Estado de Justiça e Segurança Pública - SEJUSP",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Agente de Segurança Penitenciário",
       "escolaridade": "tecnico",
       "area": [
         "seguranca",
         "administracao"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
       "lat": null,
       "lng": null,
       "salario": 4448.15,
       "vagas": 4,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-10-09",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-29",
       "dt_prova": null,
@@ -749,7 +758,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmesqos2022",
@@ -768,7 +778,7 @@
       "lng": -46.6333,
       "salario": 4448.15,
       "vagas": 4,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-06-20",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-29",
       "dt_prova": null,
@@ -777,7 +787,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt13",
@@ -789,13 +800,13 @@
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "João Pessoa",
+      "estado": "PB",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-08-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-05",
       "dt_prova": null,
@@ -804,7 +815,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt16",
@@ -822,7 +834,7 @@
       "lng": null,
       "salario": 16040.88,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2025-10-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-05",
       "dt_prova": null,
@@ -831,13 +843,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-dpepb126",
       "orgao": "Defensoria Pública do Estado da Paraíba",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Defensor Público Substituto",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -857,13 +870,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpesp126",
       "orgao": "Defensoria Pública do Estado de São Paulo",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Defensor Público",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -872,7 +887,7 @@
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
+      "salario": 32200,
       "vagas": 70,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -883,20 +898,24 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-scmsp226",
       "orgao": "Irmandade da Santa Casa de Misericórdia de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico de Enfermagem",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "saude"
+      ],
       "cidade": "São Paulo",
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
+      "salario": 3821,
       "vagas": 40,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -907,20 +926,24 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-scmsp126",
       "orgao": "Irmandade da Santa Casa de Misericórdia de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico de Enfermagem",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "saude"
+      ],
       "cidade": "São Paulo",
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
+      "salario": 3500,
       "vagas": 40,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -931,13 +954,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fazsp126",
       "orgao": "Secretaria da Fazenda e Planejamento do Estado de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -957,7 +982,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tcego125",
@@ -10433,8 +10460,8 @@
     "processados": 18,
     "nAlterados": 18,
     "nErros": 0,
-    "lidosDeEdital": 18,
-    "estimados": 0,
+    "lidosDeEdital": 13,
+    "estimados": 5,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
