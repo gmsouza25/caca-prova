@@ -988,14 +988,16 @@
       "id": "fcc-scmsp126",
       "orgao": "Irmandade da Santa Casa de Misericórdia de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico em Enfermagem",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "saude"
+      ],
       "cidade": "São Paulo",
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
+      "salario": 3500,
       "vagas": 40,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -1006,13 +1008,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fazsp126",
       "orgao": "Secretaria da Fazenda e Planejamento do Estado de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -1032,13 +1036,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tcego125",
       "orgao": "Tribunal de Contas do Estado de Goiás",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor de Controle Externo",
       "escolaridade": "medio",
       "area": [
         "juridica",
@@ -1059,24 +1065,26 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-trt8r126",
       "orgao": "Tribunal Regional do Trabalho da 8ª Região",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário - Área Administrativa",
       "escolaridade": "superior",
       "area": [
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Belém",
+      "estado": "PA",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
-      "vagas": null,
+      "vagas": 5,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-25",
@@ -1086,14 +1094,16 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-alerr125",
       "orgao": "Assembleia Legislativa do Estado de Roraima",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista Legislativo",
+      "escolaridade": "superior",
       "area": [],
       "cidade": "Boa Vista",
       "estado": "RR",
@@ -1110,7 +1120,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-pomsp326",
@@ -1137,7 +1149,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpema125",
@@ -1152,7 +1166,7 @@
       "estado": "MA",
       "lat": -2.52972,
       "lng": -44.3028,
-      "salario": null,
+      "salario": 32228,
       "vagas": 70,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -1163,7 +1177,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fdsbc126",
@@ -1175,11 +1191,11 @@
         "juridica"
       ],
       "cidade": "São Bernardo do Campo",
-      "estado": "",
+      "estado": "SP",
       "lat": -23.6934,
       "lng": -46.565,
       "salario": null,
-      "vagas": null,
+      "vagas": 450,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1189,21 +1205,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fuflo126",
       "orgao": "Fundação para Conservação e a Produção Florestal de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
+      "cargo": "Analista de Meio Ambiente",
+      "escolaridade": "superior",
+      "area": [
+        "meio_ambiente"
+      ],
       "cidade": "São Paulo",
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
-      "vagas": null,
+      "salario": 5500,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1213,14 +1233,16 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-129",
       "orgao": "CONSELHO REGIONAL DE EDUCAÇÃO FÍSICA DA 22ª REGIÃO – CREF22/ES",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Advogado I, Analista Administrativo I, Contador I",
+      "escolaridade": "superior",
       "area": [
         "educacao",
         "esportes"
@@ -1240,13 +1262,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-127",
       "orgao": "SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA DE CHAPADÃO DO SUL/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Diretor de Escola, Diretor Adjunto de Escola",
       "escolaridade": null,
       "area": [
         "educacao",
@@ -1268,16 +1291,17 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
       "orgao": "PREFEITURA MUNICIPAL DE ITARANA",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Vários Cargos",
       "escolaridade": null,
       "area": [],
-      "cidade": "Não informado",
+      "cidade": "Itarana",
       "estado": "",
       "lat": null,
       "lng": null,
@@ -1292,14 +1316,15 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-125",
       "orgao": "CONSELHO REGIONAL DE ENFERMAGEM DO AMAZONAS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Administrador, Analista de Sistemas, Contador, Enfermeiro Fiscal",
+      "escolaridade": "superior",
       "area": [],
       "cidade": "Manaus",
       "estado": "AM",
@@ -1316,7 +1341,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-124",
@@ -1329,7 +1355,7 @@
         "administracao"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 130,
@@ -1343,7 +1369,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -1367,7 +1394,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-118",
@@ -1384,7 +1412,7 @@
       "lng": -44.3028,
       "salario": 4504.61,
       "vagas": 3,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-06-10",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-10-26",
       "dt_prova": null,
@@ -1393,7 +1421,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-110",
@@ -1410,7 +1439,7 @@
       "lng": -40.3128,
       "salario": 5618.71,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-10-20",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-17",
       "dt_prova": null,
@@ -1419,7 +1448,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "pci-camara-dos-deputados-df-",
@@ -1430,8 +1460,8 @@
       "area": [
         "engenharia"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Brasília",
+      "estado": "DF",
       "lat": null,
       "lng": null,
       "salario": 32070.88,
@@ -1445,19 +1475,21 @@
       "edital": "",
       "fonte": "PCI Concursos",
       "statusRaw": "",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "pci-comando-do-1-distrito-na",
       "orgao": "Com1ºDN - Comando do 1º Distrito Naval da Marinha do Brasil",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Oficial RM2 (Serviço Militar Voluntário)",
       "escolaridade": "superior",
       "area": [
         "defesa"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
       "lat": null,
       "lng": null,
       "salario": 171,
@@ -1471,7 +1503,9 @@
       "edital": "",
       "fonte": "PCI Concursos",
       "statusRaw": "",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "pci-marinha-do-brasil-am-e-r",
@@ -10430,11 +10464,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 18,
+    "processados": 19,
+    "nAlterados": 19,
     "nErros": 0,
-    "lidosDeEdital": 14,
-    "estimados": 4,
+    "lidosDeEdital": 8,
+    "estimados": 11,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
