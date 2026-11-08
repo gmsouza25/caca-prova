@@ -488,13 +488,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-rfb22",
       "orgao": "Receita Federal do Brasil",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor / Analista",
       "escolaridade": null,
       "area": [
         "fiscal"
@@ -508,13 +509,14 @@
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
-      "dt_prova": null,
+      "dt_prova": "2025-04-21",
       "regime": null,
       "link": "https://conhecimento.fgv.br/concursos/rfb22",
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-banestes22",
@@ -540,15 +542,18 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
+      "cargo": "Contador",
+      "escolaridade": "superior",
+      "area": [
+        "financeira"
+      ],
       "cidade": "Rio de Janeiro",
       "estado": "RJ",
       "lat": -22.9068,
@@ -564,7 +569,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tcees22",
@@ -591,7 +597,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmespcabo22",
@@ -609,7 +616,7 @@
       "lng": -46.6333,
       "salario": 5482.21,
       "vagas": 2000,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-03-02",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-22",
       "dt_prova": null,
@@ -618,7 +625,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-agenersa2022",
@@ -645,7 +653,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap",
@@ -662,7 +671,7 @@
       "lng": -51.0694,
       "salario": 31439.06,
       "vagas": 396,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-10-22",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -671,7 +680,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgesc22",
@@ -695,13 +705,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pgesc22",
       "orgao": "Procuradoria-Geral do Estado de Santa Catarina",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Procurador do Estado",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -712,7 +723,7 @@
       "lng": -48.5485,
       "salario": 12300,
       "vagas": 18,
-      "dt_publicacao": null,
+      "dt_publicacao": "2024-09-06",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-14",
       "dt_prova": null,
@@ -721,25 +732,26 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pss",
       "orgao": "Secretaria de Estado de Justiça e Segurança Pública - SEJUSP",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Agente de Segurança Penitenciário",
       "escolaridade": "superior",
       "area": [
         "seguranca",
         "administracao"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
       "lat": null,
       "lng": null,
       "salario": 31439.06,
       "vagas": 396,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-10-09",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -748,7 +760,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmesqos2022",
@@ -767,7 +780,7 @@
       "lng": -46.6333,
       "salario": 5482.21,
       "vagas": 2000,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-06-20",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-22",
       "dt_prova": null,
@@ -776,7 +789,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt13",
@@ -788,13 +802,13 @@
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "João Pessoa",
+      "estado": "PB",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-08-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-25",
       "dt_prova": null,
@@ -803,7 +817,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt16",
@@ -821,7 +836,7 @@
       "lng": null,
       "salario": 16040.88,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2025-10-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-25",
       "dt_prova": null,
@@ -830,7 +845,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-senado22",
@@ -854,13 +870,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-banes126",
       "orgao": "Banco do Estado do Espírito Santo - BANESTES",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Bancário",
       "escolaridade": "tecnico",
       "area": [
         "financeira"
@@ -870,7 +887,7 @@
       "lat": -20.3155,
       "lng": -40.3128,
       "salario": 5618.71,
-      "vagas": null,
+      "vagas": 50,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-23",
@@ -880,13 +897,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpepb126",
       "orgao": "Defensoria Pública do Estado da Paraíba",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Defensor Público",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -906,13 +925,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpesp126",
       "orgao": "Defensoria Pública do Estado de São Paulo",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Agente de Defensoria Pública",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -921,7 +942,7 @@
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
+      "salario": 7500,
       "vagas": 70,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -932,7 +953,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fazsp126",
@@ -10002,10 +10025,10 @@
   "llm": {
     "model": "gemini-3.6-flash",
     "processados": 18,
-    "nAlterados": 17,
-    "nErros": 1,
-    "lidosDeEdital": 17,
-    "estimados": 0,
+    "nAlterados": 18,
+    "nErros": 0,
+    "lidosDeEdital": 15,
+    "estimados": 3,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
