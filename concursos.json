@@ -961,7 +961,7 @@
       "id": "fcc-fazsp126",
       "orgao": "Secretaria da Fazenda e Planejamento do Estado de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -981,13 +981,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tcego125",
       "orgao": "Tribunal de Contas do Estado de Goiás",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor de Controle Externo",
       "escolaridade": "medio",
       "area": [
         "juridica",
@@ -1008,24 +1010,26 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-trt4r125",
       "orgao": "Tribunal Regional do Trabalho da 4ª Região",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário - Área Administrativa",
       "escolaridade": "superior",
       "area": [
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
-      "vagas": null,
+      "vagas": 1,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-25",
@@ -1035,7 +1039,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpema125",
@@ -1050,7 +1056,7 @@
       "estado": "MA",
       "lat": -2.52972,
       "lng": -44.3028,
-      "salario": null,
+      "salario": 32200,
       "vagas": 70,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -1061,7 +1067,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-semef125",
@@ -1078,8 +1086,8 @@
       "estado": "",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 12000,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1089,7 +1097,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpeba125",
@@ -1104,7 +1114,7 @@
       "estado": "BA",
       "lat": -12.9777,
       "lng": -38.5016,
-      "salario": null,
+      "salario": 32200,
       "vagas": 70,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
@@ -1115,7 +1125,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-pomsp326",
@@ -1142,13 +1154,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tjuce125",
       "orgao": "Tribunal de Justiça do Estado do Ceará",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -1168,7 +1182,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-130",
@@ -1181,27 +1197,28 @@
         "trabalho"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 5000,
       "vagas": 71,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": null,
+      "dt_publicacao": "2026-10-28",
+      "dt_inscricao_abre": "2026-11-03",
       "dt_inscricao_fecha": "2026-12-07",
-      "dt_prova": null,
+      "dt_prova": "2027-02-21",
       "regime": "estatutario",
       "link": "https://portal.ibade.selecao.site/edital/ver/130",
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-128",
       "orgao": "SECRETARIA DE SEGURANÇA, DEFESA E CIDADANIA DE RONDÔNIA - SESDEC",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Prestador Voluntário de Serviços Administrativos",
       "escolaridade": "medio",
       "area": [
         "administracao",
@@ -1222,13 +1239,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-129",
       "orgao": "CONSELHO REGIONAL DE EDUCAÇÃO FÍSICA DA 22ª REGIÃO – CREF22/ES",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Advogado I, Analista Administrativo I, Contador I",
       "escolaridade": "superior",
       "area": [
         "educacao",
@@ -1249,13 +1267,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-127",
       "orgao": "SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA DE CHAPADÃO DO SUL/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Diretor de Escola, Diretor Adjunto de Escola",
       "escolaridade": null,
       "area": [
         "educacao",
@@ -1277,7 +1296,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
@@ -1286,7 +1306,7 @@
       "cargo": "Cargo não informado",
       "escolaridade": "medio",
       "area": [],
-      "cidade": "Não informado",
+      "cidade": "Itarana",
       "estado": "",
       "lat": null,
       "lng": null,
@@ -1301,7 +1321,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-124",
@@ -1314,7 +1335,7 @@
         "administracao"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 1674.95,
@@ -1328,7 +1349,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -1352,13 +1374,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-118",
       "orgao": "CONSELHO REGIONAL DE ODONTOLOGIA DO MARANHÃO",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Agente Administrativo, Advogado",
       "escolaridade": "superior",
       "area": [
         "saude"
@@ -1369,7 +1392,7 @@
       "lng": -44.3028,
       "salario": null,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-06-10",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -1378,7 +1401,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-110",
@@ -1395,7 +1419,7 @@
       "lng": -40.3128,
       "salario": 19505.66,
       "vagas": 139,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-10-29",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-14",
       "dt_prova": null,
@@ -1404,7 +1428,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "pci-camara-dos-deputados-ret",
@@ -1415,8 +1440,8 @@
       "area": [
         "engenharia"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Brasília",
+      "estado": "DF",
       "lat": null,
       "lng": null,
       "salario": 32070.88,
@@ -1430,21 +1455,25 @@
       "edital": "",
       "fonte": "PCI Concursos",
       "statusRaw": "",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "pci-inb-retifica-concurso-pu",
       "orgao": "INB - Indústrias Nucleares do Brasil S.A.",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista do Setor Nuclear",
       "escolaridade": "superior",
-      "area": [],
-      "cidade": "Não informado",
-      "estado": "",
+      "area": [
+        "engenharia"
+      ],
+      "cidade": "Resende",
+      "estado": "RJ",
       "lat": null,
       "lng": null,
       "salario": 8374,
-      "vagas": null,
+      "vagas": 20,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-11",
@@ -1454,7 +1483,9 @@
       "edital": "",
       "fonte": "PCI Concursos",
       "statusRaw": "",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "pci-comando-do-1-distrito-na",
@@ -10024,11 +10055,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 18,
+    "processados": 19,
+    "nAlterados": 19,
     "nErros": 0,
-    "lidosDeEdital": 15,
-    "estimados": 3,
+    "lidosDeEdital": 9,
+    "estimados": 10,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
