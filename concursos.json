@@ -497,9 +497,11 @@
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Contador",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "financeira"
+      ],
       "cidade": "Rio de Janeiro",
       "estado": "RJ",
       "lat": -22.9068,
@@ -515,7 +517,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-mpsp",
@@ -539,7 +542,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-banestes22",
@@ -565,7 +569,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tcees22",
@@ -592,7 +597,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmespcabo22",
@@ -610,7 +616,7 @@
       "lng": -46.6333,
       "salario": 5482.21,
       "vagas": 2000,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-03-02",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-22",
       "dt_prova": null,
@@ -619,7 +625,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-agenersa2022",
@@ -646,7 +653,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cgesc22",
@@ -670,7 +678,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-seadap",
@@ -687,7 +696,7 @@
       "lng": -51.0694,
       "salario": 10860.62,
       "vagas": 50,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-10-22",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-18",
       "dt_prova": null,
@@ -696,7 +705,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-pmesqos2022",
@@ -715,7 +725,7 @@
       "lng": -46.6333,
       "salario": 5482.21,
       "vagas": 2000,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-06-20",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-22",
       "dt_prova": null,
@@ -724,7 +734,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-trt16",
@@ -742,7 +753,7 @@
       "lng": null,
       "salario": 16040.88,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2025-10-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-25",
       "dt_prova": null,
@@ -751,7 +762,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-senado22",
@@ -775,7 +787,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-cbmerj22",
@@ -793,7 +806,7 @@
       "lng": -43.1729,
       "salario": 12279.71,
       "vagas": 192,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-01-03",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-16",
       "dt_prova": null,
@@ -802,7 +815,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-fempar23",
@@ -826,13 +840,14 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-tceto22",
       "orgao": "Tribunal de Contas do Estado do Tocantins",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Técnico, Assistente de Controle Externo, Auditor de Controle Externo",
       "escolaridade": "medio",
       "area": [
         "juridica",
@@ -844,7 +859,7 @@
       "lng": -48.3317,
       "salario": 11862.19,
       "vagas": 16,
-      "dt_publicacao": null,
+      "dt_publicacao": "2023-02-10",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -853,14 +868,15 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-banes226",
       "orgao": "Banco do Estado do Espírito Santo - BANESTES / BANESCOR",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Técnico Bancário",
+      "escolaridade": "medio",
       "area": [
         "financeira"
       ],
@@ -869,7 +885,7 @@
       "lat": -20.3155,
       "lng": -40.3128,
       "salario": 6393.38,
-      "vagas": null,
+      "vagas": 50,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-11",
@@ -879,13 +895,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-banes126",
       "orgao": "Banco do Estado do Espírito Santo - BANESTES / BANESTES SEGUROS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Bancário",
       "escolaridade": "tecnico",
       "area": [
         "financeira"
@@ -895,7 +913,7 @@
       "lat": -20.3155,
       "lng": -40.3128,
       "salario": 5618.71,
-      "vagas": null,
+      "vagas": 50,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-23",
@@ -905,14 +923,16 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-cetes126",
       "orgao": "CETESB - COMPANHIA AMBIENTAL DO ESTADO DE SÃO PAULO",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Analista Administrativo",
+      "escolaridade": "superior",
       "area": [
         "meio_ambiente"
       ],
@@ -931,13 +951,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpepb126",
       "orgao": "Defensoria Pública do Estado da Paraíba",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Defensor Público",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -957,7 +979,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fazsp126",
@@ -9909,8 +9933,8 @@
     "processados": 18,
     "nAlterados": 18,
     "nErros": 0,
-    "lidosDeEdital": 18,
-    "estimados": 0,
+    "lidosDeEdital": 14,
+    "estimados": 4,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
