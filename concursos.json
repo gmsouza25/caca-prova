@@ -987,7 +987,7 @@
       "id": "fcc-fazsp126",
       "orgao": "Secretaria da Fazenda e Planejamento do Estado de São Paulo",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Auditor Fiscal da Receita Estadual",
       "escolaridade": "superior",
       "area": [
         "administracao"
@@ -1007,24 +1007,26 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-trt4r125",
       "orgao": "Tribunal Regional do Trabalho da 4ª Região",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário - Área Administrativa",
       "escolaridade": "superior",
       "area": [
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
-      "vagas": null,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-25",
@@ -1034,13 +1036,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tjuce125",
       "orgao": "Tribunal de Justiça do Estado do Ceará",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -1060,23 +1064,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-pgmam126",
       "orgao": "Procuradoria Geral do Município de ManausProcurador do Município de 3ª Classe",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Procurador do Município de 3ª Classe",
       "escolaridade": "superior",
       "area": [
         "juridica"
       ],
       "cidade": "Manaus",
-      "estado": "",
+      "estado": "AM",
       "lat": -3.11903,
       "lng": -60.0217,
-      "salario": null,
-      "vagas": null,
+      "salario": 19500,
+      "vagas": 5,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1086,21 +1092,26 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-unasp126",
       "orgao": "Centro Universitário Adventista de São Paulo - UNASPVestibular Medicina - Processo Seletivo 2027",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
+      "cargo": "Professor do Ensino Superior - Medicina",
+      "escolaridade": "superior",
+      "area": [
+        "educacao",
+        "saude"
+      ],
       "cidade": "São Paulo",
       "estado": "SP",
       "lat": -23.5505,
       "lng": -46.6333,
-      "salario": null,
-      "vagas": null,
+      "salario": 8500,
+      "vagas": 5,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1110,7 +1121,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpema125",
@@ -1136,7 +1149,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-semef125",
@@ -1153,8 +1168,8 @@
       "estado": "",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 15000,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1164,7 +1179,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-130",
@@ -1177,27 +1194,28 @@
         "trabalho"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 5000,
       "vagas": 71,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": null,
+      "dt_publicacao": "2026-10-28",
+      "dt_inscricao_abre": "2026-11-03",
       "dt_inscricao_fecha": "2026-12-07",
-      "dt_prova": null,
+      "dt_prova": "2027-02-21",
       "regime": "estatutario",
       "link": "https://portal.ibade.selecao.site/edital/ver/130",
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-128",
       "orgao": "SECRETARIA DE SEGURANÇA, DEFESA E CIDADANIA DE RONDÔNIA - SESDEC",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Prestador Voluntário de Serviços Administrativos",
       "escolaridade": "medio",
       "area": [
         "administracao",
@@ -1218,7 +1236,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-129",
@@ -1245,13 +1264,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-127",
       "orgao": "SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA DE CHAPADÃO DO SUL/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Diretor de Escola, Diretor Adjunto de Escola",
       "escolaridade": "superior",
       "area": [
         "educacao",
@@ -1264,7 +1284,7 @@
       "lng": -54.6466,
       "salario": null,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-11-11",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-16",
       "dt_prova": null,
@@ -1273,7 +1293,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
@@ -1282,7 +1303,7 @@
       "cargo": "Cargo não informado",
       "escolaridade": null,
       "area": [],
-      "cidade": "Não informado",
+      "cidade": "Itarana",
       "estado": "",
       "lat": null,
       "lng": null,
@@ -1297,7 +1318,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-124",
@@ -1310,7 +1332,7 @@
         "administracao"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 13359.44,
@@ -1324,7 +1346,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -1332,7 +1355,12 @@
       "esfera": "Municipal",
       "cargo": "Cargo não informado",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "saude",
+        "educacao",
+        "fiscal",
+        "infraestrutura"
+      ],
       "cidade": "Vitória",
       "estado": "ES",
       "lat": -20.3155,
@@ -1348,7 +1376,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-118",
@@ -1365,7 +1394,7 @@
       "lng": -44.3028,
       "salario": null,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-06-10",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -1374,13 +1403,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-110",
       "orgao": "POLÍCIA CIVIL DO ESTADO DO ESPÍRITO SANTO",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Oficial Investigador de Polícia",
       "escolaridade": "medio",
       "area": [
         "seguranca"
@@ -1391,7 +1421,7 @@
       "lng": -40.3128,
       "salario": 19505.66,
       "vagas": 139,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-11-16",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-14",
       "dt_prova": null,
@@ -1400,7 +1430,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ifpe-tecnico-administrati",
@@ -1426,7 +1457,9 @@
       "edital": "",
       "fonte": "IFPE (Instituto Federal de PE)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ifpe-professor",
@@ -1442,7 +1475,7 @@
       "lat": -8.0543,
       "lng": -34.8813,
       "salario": 4193.9,
-      "vagas": null,
+      "vagas": 20,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-18",
@@ -1452,7 +1485,9 @@
       "edital": "",
       "fonte": "IFPE (Instituto Federal de PE)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ifpe-professor-2",
@@ -1468,7 +1503,7 @@
       "lat": -8.0543,
       "lng": -34.8813,
       "salario": 4193.9,
-      "vagas": null,
+      "vagas": 30,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-18",
@@ -1478,7 +1513,9 @@
       "edital": "",
       "fonte": "IFPE (Instituto Federal de PE)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "pci-camara-dos-deputados-ret",
@@ -9930,11 +9967,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 18,
+    "processados": 19,
+    "nAlterados": 19,
     "nErros": 0,
-    "lidosDeEdital": 14,
-    "estimados": 4,
+    "lidosDeEdital": 9,
+    "estimados": 10,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
