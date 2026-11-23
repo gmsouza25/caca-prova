@@ -498,7 +498,7 @@
       "id": "fgv-cgmrj23",
       "orgao": "Controladoria Geral do Município do Rio de Janeiro",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Contador",
       "escolaridade": null,
       "area": [],
       "cidade": "Rio de Janeiro",
@@ -516,7 +516,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fgv-mpsp",
@@ -895,7 +896,8 @@
       "edital": "",
       "fonte": "FGV Conhecimento",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "edital"
     },
     {
       "id": "fcc-banes226",
@@ -957,7 +959,7 @@
       "id": "fcc-cetes126",
       "orgao": "CETESB - COMPANHIA AMBIENTAL DO ESTADO DE SÃO PAULO",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Ambiental",
       "escolaridade": null,
       "area": [
         "meio_ambiente"
@@ -977,13 +979,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-dpepb126",
       "orgao": "Defensoria Pública do Estado da Paraíba",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Analista Defensorial",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -1003,24 +1007,26 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-trt4r125",
       "orgao": "Tribunal Regional do Trabalho da 4ª Região",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário - Área Administrativa",
       "escolaridade": "superior",
       "area": [
         "juridica",
         "trabalho"
       ],
-      "cidade": "Não informado",
-      "estado": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
       "lat": null,
       "lng": null,
       "salario": 16040.88,
-      "vagas": null,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-11-25",
@@ -1030,21 +1036,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-abgfg126",
       "orgao": "ABGF - Agência Brasileira Gestora de Fundos Garantidores e Garantias",
       "esfera": "Federal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
-      "area": [],
-      "cidade": "Não informado",
-      "estado": "",
+      "cargo": "Analista de Operações",
+      "escolaridade": "superior",
+      "area": [
+        "financeira"
+      ],
+      "cidade": "Brasília",
+      "estado": "DF",
       "lat": null,
       "lng": null,
-      "salario": null,
-      "vagas": null,
+      "salario": 8500,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1054,23 +1064,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-fdsbc126",
       "orgao": "FDSBC - Faculdade de Direito de São Bernardo do CampoVestibular - Processo Seletivo de Direito - 2027",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
-      "escolaridade": null,
+      "cargo": "Assistente Administrativo",
+      "escolaridade": "medio",
       "area": [
         "juridica"
       ],
       "cidade": "São Bernardo do Campo",
-      "estado": "",
+      "estado": "SP",
       "lat": -23.6934,
       "lng": -46.565,
-      "salario": null,
-      "vagas": null,
+      "salario": 3500,
+      "vagas": 5,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1080,13 +1092,15 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-tjuce125",
       "orgao": "Tribunal de Justiça do Estado do Ceará",
       "esfera": "Estadual",
-      "cargo": "Cargo não informado",
+      "cargo": "Técnico Judiciário",
       "escolaridade": "superior",
       "area": [
         "juridica"
@@ -1106,23 +1120,25 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-pgmam126",
       "orgao": "Procuradoria Geral do Município de ManausProcurador do Município de 3ª Classe",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Procurador do Município de 3ª Classe",
       "escolaridade": "superior",
       "area": [
         "juridica"
       ],
       "cidade": "Manaus",
-      "estado": "",
+      "estado": "AM",
       "lat": -3.11903,
       "lng": -60.0217,
-      "salario": null,
-      "vagas": null,
+      "salario": 22500,
+      "vagas": 10,
       "dt_publicacao": null,
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
@@ -1132,7 +1148,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "fcc-unasp126",
@@ -1140,7 +1158,9 @@
       "esfera": "Municipal",
       "cargo": "Cargo não informado",
       "escolaridade": null,
-      "area": [],
+      "area": [
+        "saude"
+      ],
       "cidade": "São Paulo",
       "estado": "SP",
       "lat": -23.5505,
@@ -1156,7 +1176,9 @@
       "edital": "",
       "fonte": "Fundação Carlos Chagas (FCC)",
       "statusRaw": "",
-      "status": "Edital publicado"
+      "status": "Edital publicado",
+      "fonteDados": "estimado",
+      "estimado": true
     },
     {
       "id": "ibade-130",
@@ -1169,27 +1191,28 @@
         "trabalho"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 5000,
       "vagas": 71,
-      "dt_publicacao": null,
-      "dt_inscricao_abre": null,
+      "dt_publicacao": "2026-10-28",
+      "dt_inscricao_abre": "2026-11-03",
       "dt_inscricao_fecha": "2026-12-07",
-      "dt_prova": null,
+      "dt_prova": "2027-02-21",
       "regime": "estatutario",
       "link": "https://portal.ibade.selecao.site/edital/ver/130",
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-129",
       "orgao": "CONSELHO REGIONAL DE EDUCAÇÃO FÍSICA DA 22ª REGIÃO – CREF22/ES",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Advogado I, Analista Administrativo I, Contador I",
       "escolaridade": null,
       "area": [
         "educacao",
@@ -1210,13 +1233,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-128",
       "orgao": "SECRETARIA DE SEGURANÇA, DEFESA E CIDADANIA DE RONDÔNIA - SESDEC",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Prestador Voluntário de Serviços Administrativos",
       "escolaridade": null,
       "area": [
         "administracao",
@@ -1237,13 +1261,14 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-127",
       "orgao": "SECRETARIA MUNICIPAL DE EDUCAÇÃO E CULTURA DE CHAPADÃO DO SUL/MS",
       "esfera": "Municipal",
-      "cargo": "Cargo não informado",
+      "cargo": "Diretor de Escola, Diretor Adjunto de Escola",
       "escolaridade": "superior",
       "area": [
         "educacao",
@@ -1256,7 +1281,7 @@
       "lng": -54.6466,
       "salario": null,
       "vagas": 1000,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-11-17",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-01",
       "dt_prova": null,
@@ -1265,7 +1290,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-126",
@@ -1273,8 +1299,14 @@
       "esfera": "Municipal",
       "cargo": "Cargo não informado",
       "escolaridade": null,
-      "area": [],
-      "cidade": "Não informado",
+      "area": [
+        "administracao",
+        "educacao",
+        "financeira",
+        "fiscal",
+        "saude"
+      ],
+      "cidade": "Itarana",
       "estado": "",
       "lat": null,
       "lng": null,
@@ -1289,7 +1321,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-124",
@@ -1302,7 +1335,7 @@
         "administracao"
       ],
       "cidade": "Porto Velho",
-      "estado": "",
+      "estado": "RO",
       "lat": -8.7619,
       "lng": -63.9039,
       "salario": 13359.44,
@@ -1316,7 +1349,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-121",
@@ -1340,7 +1374,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-118",
@@ -1357,7 +1392,7 @@
       "lng": -44.3028,
       "salario": null,
       "vagas": null,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-06-15",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": null,
       "dt_prova": null,
@@ -1366,7 +1401,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ibade-110",
@@ -1383,7 +1419,7 @@
       "lng": -40.3128,
       "salario": 19505.66,
       "vagas": 139,
-      "dt_publicacao": null,
+      "dt_publicacao": "2026-11-19",
       "dt_inscricao_abre": null,
       "dt_inscricao_fecha": "2026-12-14",
       "dt_prova": null,
@@ -1392,7 +1428,8 @@
       "edital": "",
       "fonte": "IBADE",
       "statusRaw": "Inscrições abertas",
-      "status": "Inscrições abertas"
+      "status": "Inscrições abertas",
+      "fonteDados": "edital"
     },
     {
       "id": "ifpe-tecnico-administrati",
@@ -9943,11 +9980,11 @@
   ],
   "llm": {
     "model": "gemini-3.6-flash",
-    "processados": 18,
-    "nAlterados": 15,
-    "nErros": 3,
-    "lidosDeEdital": 13,
-    "estimados": 2,
+    "processados": 19,
+    "nAlterados": 19,
+    "nErros": 0,
+    "lidosDeEdital": 11,
+    "estimados": 8,
     "semEdital": 0,
     "aplicado": true,
     "offset": 0,
